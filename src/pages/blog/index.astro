@@ -1,0 +1,508 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const allPosts = await getCollection('blog');
+const sorted = allPosts.sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+
+const categories = [
+  'All',
+  'Buyer Guides',
+  'Sourcing Intelligence',
+  'Certifications & Compliance',
+  'Market Insights',
+  'Ingredient Spotlights',
+];
+
+const categoryColors: Record<string, string> = {
+  'Buyer Guides': '#2563EB',
+  'Sourcing Intelligence': '#0F766E',
+  'Certifications & Compliance': '#7C3AED',
+  'Market Insights': '#B45309',
+  'Ingredient Spotlights': '#15803D',
+};
+
+function formatDate(date: Date) {
+  return date.toLocaleDateString('en-GB', {
+    day: 'numeric',
+    month: 'short',
+    year: 'numeric',
+  });
+}
+---
+
+<BaseLayout
+  title="Sourcing Insights & Buyer Guides | Ayris Global"
+  description="Expert guidance on sourcing certified Indian herbal ingredients — buyer guides, certification explainers, supplier evaluation checklists, and market intelligence for global procurement teams."
+>
+
+  <!-- ── Hero ─────────────────────────────────────── -->
+  <section class="blog-hero">
+    <div class="blog-hero__inner">
+      <span class="blog-hero__eyebrow">Intelligence. Insight. Advantage.</span>
+      <h1 class="blog-hero__title">Sourcing Insights &amp; Buyer Guides</h1>
+      <p class="blog-hero__sub">
+        Practical intelligence for procurement teams, brand formulators, and wholesale buyers sourcing certified herbal ingredients from India — for markets across the EU, UK, USA, UAE/GCC, Japan, Korea, ANZ, SEA and LatAm.
+      </p>
+    </div>
+  </section>
+
+  <!-- ── Category Filter ───────────────────────────── -->
+  <section class="filter-bar">
+    <div class="filter-bar__inner">
+      <p class="filter-bar__label">Filter by topic:</p>
+      <div class="filter-pills" role="tablist" aria-label="Filter posts by category">
+        {categories.map((cat) => (
+          <button
+            class="pill"
+            data-category={cat}
+            role="tab"
+            aria-selected={cat === 'All' ? 'true' : 'false'}
+          >
+            {cat}
+          </button>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Post Grid ─────────────────────────────────── -->
+  <section class="posts-section">
+    <div class="posts-section__inner">
+
+      {sorted.length === 0 ? (
+        <p class="no-posts">No posts published yet. Check back soon.</p>
+      ) : (
+        <div class="posts-grid" id="posts-grid">
+          {sorted.map((post) => {
+            const slug = post.slug;
+            const { title, description, pubDate, category, readingTime, image, imageAlt } = post.data;
+            const color = categoryColors[category] || '#1B2B4B';
+            return (
+              <article class="post-card" data-category={category}>
+                <a href={`/blog/${slug}/`} class="post-card__link" aria-label={title}>
+                  <div class="post-card__image-wrap">
+                    {image ? (
+                      <img
+                        src={image}
+                        alt={imageAlt || title}
+                        class="post-card__image"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    ) : (
+                      <div class="post-card__image-fallback">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1.5" aria-hidden="true">
+                          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                        </svg>
+                      </div>
+                    )}
+                    <span class="post-card__badge" style={`background:${color}`}>{category}</span>
+                  </div>
+                  <div class="post-card__body">
+                    <h2 class="post-card__title">{title}</h2>
+                    <p class="post-card__desc">{description}</p>
+                    <div class="post-card__meta">
+                      <time datetime={pubDate.toISOString()}>{formatDate(pubDate)}</time>
+                      {readingTime && (
+                        <span class="post-card__meta-sep">·</span>
+                        <span>{readingTime} min read</span>
+                      )}
+                    </div>
+                  </div>
+                </a>
+              </article>
+            );
+          })}
+        </div>
+      )}
+
+      <p class="no-results" id="no-results" style="display:none;">
+        No posts in this category yet — <button class="no-results__reset">view all posts</button>.
+      </p>
+
+    </div>
+  </section>
+
+  <!-- ── Bottom CTA ────────────────────────────────── -->
+  <section class="blog-cta">
+    <div class="blog-cta__inner">
+      <h2>Have a sourcing requirement?</h2>
+      <p>Our team works with verified Indian manufacturers to supply certified herbal ingredients globally. Submit an enquiry and we'll respond within one business day.</p>
+      <div class="blog-cta__btns">
+        <a href="/contact/" class="btn-primary">Submit a Sourcing Enquiry</a>
+        <a href="/for-buyers/" class="btn-secondary">How We Work</a>
+      </div>
+    </div>
+  </section>
+
+</BaseLayout>
+
+<!-- ── Filter Script ─────────────────────────────── -->
+<script>
+  const pills = document.querySelectorAll<HTMLButtonElement>('.pill');
+  const cards = document.querySelectorAll<HTMLElement>('.post-card');
+  const noResults = document.getElementById('no-results');
+  const resetBtn = document.querySelector<HTMLButtonElement>('.no-results__reset');
+
+  function filterPosts(selectedCategory: string) {
+    let visible = 0;
+
+    pills.forEach((pill) => {
+      const isActive = pill.dataset.category === selectedCategory;
+      pill.classList.toggle('pill--active', isActive);
+      pill.setAttribute('aria-selected', isActive ? 'true' : 'false');
+    });
+
+    cards.forEach((card) => {
+      const show =
+        selectedCategory === 'All' || card.dataset.category === selectedCategory;
+      card.style.display = show ? '' : 'none';
+      if (show) visible++;
+    });
+
+    if (noResults) {
+      noResults.style.display = visible === 0 ? 'block' : 'none';
+    }
+  }
+
+  // Initialise
+  filterPosts('All');
+
+  pills.forEach((pill) => {
+    pill.addEventListener('click', () => {
+      filterPosts(pill.dataset.category || 'All');
+    });
+  });
+
+  resetBtn?.addEventListener('click', () => filterPosts('All'));
+</script>
+
+<style>
+  /* ── Hero ──────────────────────────────────────────── */
+  .blog-hero {
+    background: linear-gradient(135deg, #1B2B4B 0%, #243d6b 100%);
+    padding: 5rem 1.5rem 4rem;
+    text-align: center;
+  }
+
+  .blog-hero__inner {
+    max-width: 760px;
+    margin: 0 auto;
+  }
+
+  .blog-hero__eyebrow {
+    display: inline-block;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #C9A84C;
+    margin-bottom: 1rem;
+  }
+
+  .blog-hero__title {
+    font-family: 'DM Serif Display', Georgia, serif;
+    font-size: clamp(2rem, 5vw, 3rem);
+    color: #FAFAF8;
+    margin: 0 0 1.1rem;
+    line-height: 1.15;
+  }
+
+  .blog-hero__sub {
+    font-size: 1.05rem;
+    color: rgba(255,255,255,0.72);
+    line-height: 1.75;
+    max-width: 640px;
+    margin: 0 auto;
+  }
+
+  /* ── Filter bar ────────────────────────────────────── */
+  .filter-bar {
+    background: #fff;
+    border-bottom: 1px solid #e8e3d9;
+    padding: 1.1rem 1.5rem;
+    position: sticky;
+    top: 0;
+    z-index: 40;
+    box-shadow: 0 2px 8px rgba(27,43,75,0.06);
+  }
+
+  .filter-bar__inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .filter-bar__label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #888;
+    white-space: nowrap;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .filter-pills {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+
+  .pill {
+    background: #f4f0e8;
+    border: 1px solid transparent;
+    color: #444;
+    font-size: 0.82rem;
+    font-weight: 500;
+    padding: 0.35rem 0.9rem;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: background 0.18s, color 0.18s, border-color 0.18s;
+    font-family: 'Inter', system-ui, sans-serif;
+    white-space: nowrap;
+  }
+
+  .pill:hover {
+    background: #e8e0cc;
+    color: #1B2B4B;
+  }
+
+  .pill--active {
+    background: #1B2B4B;
+    color: #C9A84C;
+    border-color: #1B2B4B;
+    font-weight: 700;
+  }
+
+  /* ── Posts section ─────────────────────────────────── */
+  .posts-section {
+    background: #FAFAF8;
+    padding: 3.5rem 1.5rem 5rem;
+  }
+
+  .posts-section__inner {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .posts-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  @media (max-width: 900px) {
+    .posts-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  @media (max-width: 580px) {
+    .posts-grid { grid-template-columns: 1fr; }
+  }
+
+  .no-posts {
+    text-align: center;
+    color: #888;
+    font-size: 1rem;
+    padding: 4rem 0;
+  }
+
+  .no-results {
+    text-align: center;
+    color: #888;
+    font-size: 0.95rem;
+    padding: 3rem 0;
+  }
+
+  .no-results__reset {
+    background: none;
+    border: none;
+    color: #C9A84C;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: inherit;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    padding: 0;
+    font-family: inherit;
+  }
+
+  /* ── Post card ─────────────────────────────────────── */
+  .post-card {
+    background: #fff;
+    border-radius: 12px;
+    border: 1px solid #e8e3d9;
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .post-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(27,43,75,0.12);
+  }
+
+  .post-card__link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  /* Card image */
+  .post-card__image-wrap {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+    background: #1B2B4B;
+    flex-shrink: 0;
+  }
+
+  .post-card__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+  }
+
+  .post-card:hover .post-card__image {
+    transform: scale(1.04);
+  }
+
+  .post-card__image-fallback {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #1B2B4B 0%, #243d6b 100%);
+  }
+
+  .post-card__badge {
+    position: absolute;
+    bottom: 0.75rem;
+    left: 0.75rem;
+    padding: 0.2rem 0.65rem;
+    border-radius: 999px;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #fff;
+  }
+
+  /* Card body */
+  .post-card__body {
+    padding: 1.35rem 1.4rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  .post-card__title {
+    font-family: 'DM Serif Display', Georgia, serif;
+    font-size: 1.1rem;
+    color: #1B2B4B;
+    line-height: 1.35;
+    margin: 0 0 0.65rem;
+  }
+
+  .post-card__desc {
+    font-size: 0.875rem;
+    color: #555;
+    line-height: 1.65;
+    margin: 0 0 1rem;
+    flex: 1;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .post-card__meta {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.78rem;
+    color: #999;
+    margin-top: auto;
+  }
+
+  .post-card__meta-sep { opacity: 0.5; }
+
+  /* ── Bottom CTA ─────────────────────────────────────── */
+  .blog-cta {
+    background: linear-gradient(135deg, #1B2B4B 0%, #243d6b 100%);
+    padding: 5rem 1.5rem;
+    text-align: center;
+  }
+
+  .blog-cta__inner {
+    max-width: 680px;
+    margin: 0 auto;
+  }
+
+  .blog-cta h2 {
+    font-family: 'DM Serif Display', Georgia, serif;
+    font-size: clamp(1.6rem, 3.5vw, 2.2rem);
+    color: #FAFAF8;
+    margin: 0 0 0.9rem;
+  }
+
+  .blog-cta p {
+    color: rgba(255,255,255,0.72);
+    font-size: 1rem;
+    line-height: 1.75;
+    margin: 0 0 2rem;
+  }
+
+  .blog-cta__btns {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .btn-primary {
+    display: inline-block;
+    background: #C9A84C;
+    color: #1B2B4B;
+    padding: 0.85rem 2rem;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    text-decoration: none;
+    transition: background 0.2s, transform 0.15s;
+  }
+
+  .btn-primary:hover {
+    background: #d4b05a;
+    transform: translateY(-2px);
+  }
+
+  .btn-secondary {
+    display: inline-block;
+    background: transparent;
+    color: #FAFAF8;
+    border: 2px solid rgba(255,255,255,0.35);
+    padding: 0.85rem 2rem;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-decoration: none;
+    transition: border-color 0.2s, background 0.2s;
+  }
+
+  .btn-secondary:hover {
+    border-color: #C9A84C;
+    background: rgba(201,168,76,0.1);
+  }
+</style>

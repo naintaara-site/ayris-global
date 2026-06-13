@@ -148,9 +148,9 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
-"gmp-iso-fssai-organic-certification-india-herbal.md.md": {
-	id: "gmp-iso-fssai-organic-certification-india-herbal.md.md";
-  slug: "gmp-iso-fssai-organic-certification-india-herbalmd";
+"gmp-iso-fssai-organic-certification-india-herbal.md": {
+	id: "gmp-iso-fssai-organic-certification-india-herbal.md";
+  slug: "gmp-iso-fssai-organic-certification-india-herbal";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">

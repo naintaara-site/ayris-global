@@ -1,5 +1,4 @@
 import { defineCollection, z } from 'astro:content';
-
 const blog = defineCollection({
   type: 'content',
   schema: z.object({
@@ -13,13 +12,11 @@ const blog = defineCollection({
       'Market Insights',
       'Ingredient Spotlights',
     ]),
-    slug: z.string().optional(),
     author: z.string().default('Ayris Global Editorial'),
-    readingTime: z.number().optional(), // minutes
+    readingTime: z.number().optional(),
     featured: z.boolean().default(false),
-    image: z.string().optional(), // Unsplash URL
+    image: z.string().optional(),
     imageAlt: z.string().optional(),
   }),
 });
-
 export const collections = { blog };

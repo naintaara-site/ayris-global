@@ -146,21 +146,21 @@ declare module 'astro:content' {
   slug: "ashwagandha-extract-buyers-guide";
   body: string;
   collection: "blog";
-  data: any
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"gmp-iso-fssai-organic-certification-india-herbal.md.md": {
+	id: "gmp-iso-fssai-organic-certification-india-herbal.md.md";
+  slug: "gmp-iso-fssai-organic-certification-india-herbalmd";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
 "how-to-evaluate-indian-herbal-ingredient-supplier.md": {
 	id: "how-to-evaluate-indian-herbal-ingredient-supplier.md";
   slug: "how-to-evaluate-indian-herbal-ingredient-supplier";
   body: string;
   collection: "blog";
-  data: any
-} & { render(): Render[".md"] };
-"mp-iso-fssai-organic-certification-india-herbal.md": {
-	id: "mp-iso-fssai-organic-certification-india-herbal.md";
-  slug: "mp-iso-fssai-organic-certification-india-herbal";
-  body: string;
-  collection: "blog";
-  data: any
+  data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
 };
 
@@ -172,5 +172,5 @@ declare module 'astro:content' {
 
 	type AnyEntryMap = ContentEntryMap & DataEntryMap;
 
-	export type ContentConfig = never;
+	export type ContentConfig = typeof import("./../../src/content/config.js");
 }

@@ -1,4 +1,4 @@
----
+﻿---
 title: "How to Evaluate an Indian Herbal Ingredient Supplier: 7 Things to Check Before Placing an Order"
 description: "A practical evaluation framework for global buyers new to Indian sourcing. Seven due diligence checks, a documentation checklist, and the red flags that should stop a procurement conversation before it starts."
 pubDate: 2025-06-08
@@ -6,7 +6,7 @@ category: "Sourcing Intelligence"
 author: "Ayris Global Editorial"
 readingTime: 9
 featured: false
-image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&auto=format&fit=crop&q=80"
+image: "https://images.unsplash.com/photo-1600857544200-b2f468e40a8b?w=1200&auto=format&fit=crop&q=80"
 imageAlt: "Dried herbs and botanical ingredients arranged for quality inspection"
 ---
 
@@ -196,3 +196,4 @@ Buyers who are new to Indian sourcing, or who are scaling their ingredient portf
 Ayris Global works with verified Indian manufacturers to supply certified herbal and botanical ingredients to buyers across the EU, UK, USA, UAE/GCC, Japan, Korea, ANZ, SEA and LatAm. Our role is to take supplier qualification, documentation management and export logistics off your plate — so that the ingredient you specify is the ingredient you receive.
 
 If you have a current sourcing requirement or want to discuss your ingredient supply chain, [submit an enquiry](/contact/) and our team will respond within one business day.
+

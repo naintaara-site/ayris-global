@@ -1,31 +1,31 @@
----
+﻿---
 import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
 <BaseLayout
-  title="Contact — Ayris Global"
+  title="Contact â€” Ayris Global"
   description="Submit a sourcing enquiry to Ayris Global. We partner with wellness brands, supplement manufacturers, and ingredient buyers across the EU, UK, USA, UAE/GCC, Japan, Korea, ANZ, Southeast Asia, and Latin America."
 >
 
-  <!-- ═══════════════════════════════════
+  <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
        PAGE HERO
-  ════════════════════════════════════ -->
+  â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
   <section class="page-hero">
     <div class="page-hero__inner">
       <span class="eyebrow">Get in Touch</span>
       <h1 class="page-hero__title">Start a Sourcing Conversation</h1>
-      <p class="page-hero__sub">Tell us what you need. We'll respond within 48 hours with matched producer options, initial specifications, and indicative pricing — no obligation, no pressure.</p>
+      <p class="page-hero__sub">Tell us what you need. We'll respond within 48 hours with matched producer options, initial specifications, and indicative pricing â€” no obligation, no pressure.</p>
     </div>
   </section>
 
-  <!-- ═══════════════════════════════════
+  <!-- â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
        MAIN CONTENT: FORM + SIDEBAR
-  ════════════════════════════════════ -->
+  â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• -->
   <section class="contact-section">
     <div class="container">
       <div class="contact-layout">
 
-        <!-- ── ENQUIRY FORM ── -->
+        <!-- â”€â”€ ENQUIRY FORM â”€â”€ -->
         <div class="form-panel">
           <h2 class="form-panel__title">Sourcing Enquiry</h2>
           <p class="form-panel__sub">All fields help us match your requirements precisely. The more detail you share, the faster and more accurate our response.</p>
@@ -36,9 +36,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             method="POST"
             novalidate
           >
-            <!-- Web3Forms access key — replace with your key -->
+            <!-- Web3Forms access key â€” replace with your key -->
             <input type="hidden" name="access_key" value="5d7d6660-d5db-4688-96b6-13614db6f718" />
-            <input type="hidden" name="subject" value="New Sourcing Enquiry — Ayris Global" />
+            <input type="hidden" name="subject" value="New Sourcing Enquiry â€” Ayris Global" />
             <input type="hidden" name="from_name" value="Ayris Global Website" />
             <input type="hidden" name="redirect" value="false" />
             <!-- Honeypot spam protection -->
@@ -159,8 +159,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
                   <option value="Nutraceutical Ingredients">Nutraceutical Ingredients (Curcumin, Piperine, active isolates)</option>
                   <option value="Essential Oils">Essential Oils (Cardamom, Vetiver, Ginger, Sandalwood etc.)</option>
                   <option value="Natural Wellness Ingredients">Natural Wellness Ingredients (Rose, Hibiscus, Chamomile, dried botanicals)</option>
-                  <option value="Multiple Categories">Multiple Categories — I'll describe in my message</option>
-                  <option value="Not Sure">Not sure yet — looking for guidance</option>
+                  <option value="Multiple Categories">Multiple Categories â€” I'll describe in my message</option>
+                  <option value="Not Sure">Not sure yet â€” looking for guidance</option>
                 </select>
               </div>
             </div>
@@ -182,17 +182,17 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             <div class="form-footer">
               <button class="btn btn--submit" type="submit" id="submit-btn">
                 <span class="btn__text">Submit Enquiry</span>
-                <span class="btn__icon" aria-hidden="true">→</span>
+                <span class="btn__icon" aria-hidden="true">â†’</span>
               </button>
               <p class="form-note">We respond to all enquiries within 48 hours. Your details are used solely to respond to your enquiry and are never shared with third parties.</p>
             </div>
 
             <!-- Success / error messages -->
             <div id="form-success" class="form-message form-message--success" role="alert" aria-live="polite" hidden>
-              <span class="form-message__icon" aria-hidden="true">✓</span>
+              <span class="form-message__icon" aria-hidden="true">âœ“</span>
               <div>
                 <strong>Enquiry received.</strong>
-                <span>Thank you — we'll be in touch within 48 hours with matched sourcing options.</span>
+                <span>Thank you â€” we'll be in touch within 48 hours with matched sourcing options.</span>
               </div>
             </div>
             <div id="form-error" class="form-message form-message--error" role="alert" aria-live="polite" hidden>
@@ -205,7 +205,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           </form>
         </div>
 
-        <!-- ── SIDEBAR ── -->
+        <!-- â”€â”€ SIDEBAR â”€â”€ -->
         <aside class="contact-sidebar">
 
           <!-- Direct contact -->
@@ -246,7 +246,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             <address class="office-address">
               <p class="office-address__name">Ayris Global</p>
               <p>[Street Address]</p>
-              <p>[City, State — PIN Code]</p>
+              <p>[City, State â€” PIN Code]</p>
               <p>India</p>
             </address>
             <p class="office-note">Office address to be confirmed by Danny / Neha</p>
@@ -343,7 +343,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
       // Loading state
       submitBtn.disabled = true;
-      submitBtn.querySelector('.btn__text')!.textContent = 'Sending…';
+      submitBtn.querySelector('.btn__text')!.textContent = 'Sendingâ€¦';
 
       const formData = new FormData(form);
       const data = Object.fromEntries(formData);
@@ -376,9 +376,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 </script>
 
 <style>
-  /* ─────────────────────────────
+  /* â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
      PAGE HERO
-  ───────────────────────────── */
+  â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
   .page-hero {
     background: #1B2B4B;
     padding: 7rem 1.5rem 5rem;
@@ -419,9 +419,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     font-weight: 300;
   }
 
-  /* ─────────────────────────────
+  /* â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
      CONTACT SECTION
-  ───────────────────────────── */
+  â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
   .contact-section {
     background: #FAFAF8;
     padding: 5rem 0 6rem;
@@ -440,9 +440,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     align-items: start;
   }
 
-  /* ─────────────────────────────
+  /* â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
      FORM PANEL
-  ───────────────────────────── */
+  â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
   .form-panel {
     background: #fff;
     border: 1px solid rgba(27,43,75,0.09);
@@ -466,9 +466,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     margin: 0 0 2.25rem;
   }
 
-  /* ─────────────────────────────
+  /* â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
      FORM FIELDS
-  ───────────────────────────── */
+  â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
   .form-row {
     margin-bottom: 1.25rem;
   }
@@ -543,9 +543,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     line-height: 1.65;
   }
 
-  /* ─────────────────────────────
+  /* â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
      FORM FOOTER & BUTTON
-  ───────────────────────────── */
+  â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
   .form-footer {
     display: flex;
     align-items: flex-start;
@@ -601,9 +601,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     max-width: 340px;
   }
 
-  /* ─────────────────────────────
+  /* â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
      FORM MESSAGES
-  ───────────────────────────── */
+  â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
   .form-message {
     display: flex;
     align-items: flex-start;
@@ -646,9 +646,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     font-weight: 500;
   }
 
-  /* ─────────────────────────────
+  /* â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
      SIDEBAR
-  ───────────────────────────── */
+  â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
   .contact-sidebar {
     display: flex;
     flex-direction: column;
@@ -818,9 +818,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     white-space: nowrap;
   }
 
-  /* ─────────────────────────────
+  /* â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
      RESPONSIVE
-  ───────────────────────────── */
+  â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
   @media (max-width: 1024px) {
     .contact-layout {
       grid-template-columns: 1fr 320px;
@@ -875,3 +875,4 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     .btn--submit, .contact-method, .btn__icon { transition: none; }
   }
 </style>
+

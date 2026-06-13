@@ -148,6 +148,13 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"coa-msds-phytosanitary-certificates-herbal-imports.md": {
+	id: "coa-msds-phytosanitary-certificates-herbal-imports.md";
+  slug: "coa-msds-phytosanitary-certificates-herbal-imports";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "gmp-iso-fssai-organic-certification-india-herbal.md": {
 	id: "gmp-iso-fssai-organic-certification-india-herbal.md";
   slug: "gmp-iso-fssai-organic-certification-india-herbal";
@@ -155,9 +162,44 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"halal-certification-indian-herbal-ingredients-uae-gcc.md": {
+	id: "halal-certification-indian-herbal-ingredients-uae-gcc.md";
+  slug: "halal-certification-indian-herbal-ingredients-uae-gcc";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"herbal-extract-vs-botanical-powder.md": {
+	id: "herbal-extract-vs-botanical-powder.md";
+  slug: "herbal-extract-vs-botanical-powder";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "how-to-evaluate-indian-herbal-ingredient-supplier.md": {
 	id: "how-to-evaluate-indian-herbal-ingredient-supplier.md";
   slug: "how-to-evaluate-indian-herbal-ingredient-supplier";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"india-uae-cepa-herbal-ingredients-gcc.md": {
+	id: "india-uae-cepa-herbal-ingredients-gcc.md";
+  slug: "india-uae-cepa-herbal-ingredients-gcc";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"private-label-ayurvedic-products-source-from-india.md": {
+	id: "private-label-ayurvedic-products-source-from-india.md";
+  slug: "private-label-ayurvedic-products-source-from-india";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"tulsi-holy-basil-export-guide.md": {
+	id: "tulsi-holy-basil-export-guide.md";
+  slug: "tulsi-holy-basil-export-guide";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">

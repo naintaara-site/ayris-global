@@ -119,3 +119,4 @@ Before confirming a supplier or placing a first order, request:
 Ayris Global sources certified ashwagandha extract from verified Indian manufacturers, with full documentation support for buyers in the EU, UK, USA, UAE/GCC, Japan, Korea, ANZ, SEA and LatAm.
 
 If you have a current requirement or want to discuss specifications, [submit an enquiry](/contact/) and our team will respond within one business day.
+

@@ -1,4 +1,4 @@
----
+﻿---
 import BaseLayout from '../layouts/BaseLayout.astro';
 
 interface Props {
@@ -39,9 +39,42 @@ const categoryColors: Record<string, string> = {
   'Ingredient Spotlights': '#15803D',
 };
 const badgeColor = categoryColors[category] || '#1B2B4B';
+
+const canonicalUrl = new URL(Astro.url.pathname, 'https://ayrisglobal.in').href;
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": title,
+  "description": description,
+  "image": image || "https://ayrisglobal.in/og-default.jpg",
+  "datePublished": pubDate.toISOString(),
+  "dateModified": pubDate.toISOString(),
+  "author": {
+    "@type": "Organization",
+    "name": author,
+    "url": "https://ayrisglobal.in"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Ayris Global",
+    "url": "https://ayrisglobal.in",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://ayrisglobal.in/favicon.svg"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": canonicalUrl
+  }
+};
 ---
 
 <BaseLayout title={`${title} | Ayris Global`} description={description}>
+
+  <!-- JSON-LD Article Schema -->
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} slot="head" />
 
   <!-- Hero banner (post image or navy fallback) -->
   <section class="post-hero" style={image ? `background-image: url('${image}')` : ''}>
@@ -99,8 +132,8 @@ const badgeColor = categoryColors[category] || '#1B2B4B';
             We work with verified Indian manufacturers to supply certified herbal ingredients to buyers across the EU, UK, USA, UAE/GCC, Japan, Korea, ANZ, SEA and LatAm.
           </p>
           <a href="/contact/" class="sidebar-cta__btn">Submit a Sourcing Enquiry</a>
-          <a
-            href="https://wa.me/910000000000"
+          
+            href="https://wa.me/919729256621"
             class="sidebar-cta__whatsapp"
             target="_blank"
             rel="noopener noreferrer"
@@ -153,7 +186,7 @@ const badgeColor = categoryColors[category] || '#1B2B4B';
 </BaseLayout>
 
 <style>
-  /* ── Hero ──────────────────────────────────────────── */
+  /* ── Hero ──────────────────────────────────────────────── */
   .post-hero {
     position: relative;
     background-color: #1B2B4B;
@@ -179,7 +212,7 @@ const badgeColor = categoryColors[category] || '#1B2B4B';
     width: 100%;
   }
 
-  /* ── Breadcrumb ───────────────────────────────────── */
+  /* ── Breadcrumb ──────────────────────────────────────────── */
   .breadcrumb {
     display: flex;
     align-items: center;
@@ -206,7 +239,7 @@ const badgeColor = categoryColors[category] || '#1B2B4B';
     max-width: 220px;
   }
 
-  /* ── Category badge ───────────────────────────────── */
+  /* ── Category badge ─────────────────────────────────────── */
   .category-badge {
     display: inline-block;
     padding: 0.25rem 0.85rem;
@@ -219,7 +252,7 @@ const badgeColor = categoryColors[category] || '#1B2B4B';
     margin-bottom: 1rem;
   }
 
-  /* ── Post title ───────────────────────────────────── */
+  /* ── Post title ───────────────────────────────────────────── */
   .post-title {
     font-family: 'DM Serif Display', Georgia, serif;
     font-size: clamp(1.75rem, 4vw, 2.75rem);
@@ -229,7 +262,7 @@ const badgeColor = categoryColors[category] || '#1B2B4B';
     max-width: 760px;
   }
 
-  /* ── Meta row ─────────────────────────────────────── */
+  /* ── Meta row ─────────────────────────────────────────────── */
   .post-meta {
     font-size: 0.85rem;
     color: rgba(255,255,255,0.6);
@@ -241,7 +274,7 @@ const badgeColor = categoryColors[category] || '#1B2B4B';
 
   .post-meta__sep { opacity: 0.4; }
 
-  /* ── Body layout ──────────────────────────────────── */
+  /* ── Body layout ──────────────────────────────────────────── */
   .post-body {
     background: #FAFAF8;
     padding: 4rem 1.5rem;
@@ -263,7 +296,7 @@ const badgeColor = categoryColors[category] || '#1B2B4B';
     .sidebar { order: -1; }
   }
 
-  /* ── Prose styles ─────────────────────────────────── */
+  /* ── Prose styles ─────────────────────────────────────────── */
   .prose {
     font-family: 'Inter', system-ui, sans-serif;
     font-size: 1.05rem;
@@ -365,7 +398,7 @@ const badgeColor = categoryColors[category] || '#1B2B4B';
     margin: 2.5rem 0;
   }
 
-  /* ── Sidebar ──────────────────────────────────────── */
+  /* ── Sidebar ──────────────────────────────────────────────── */
   .sidebar {
     display: flex;
     flex-direction: column;
@@ -508,7 +541,7 @@ const badgeColor = categoryColors[category] || '#1B2B4B';
 
   .sidebar-box__link:hover { color: #1B2B4B; }
 
-  /* ── Bottom CTA band ──────────────────────────────── */
+  /* ── Bottom CTA band ──────────────────────────────────────── */
   .post-cta-band {
     background: linear-gradient(135deg, #1B2B4B 0%, #243d6b 100%);
     padding: 4rem 1.5rem;

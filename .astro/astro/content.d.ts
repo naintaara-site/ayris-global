@@ -141,6 +141,13 @@ declare module 'astro:content' {
 
 	type ContentEntryMap = {
 		"blog": {
+"adaptogens-ashwagandha-shatavari-brahmi-global-demand.md": {
+	id: "adaptogens-ashwagandha-shatavari-brahmi-global-demand.md";
+  slug: "adaptogens-ashwagandha-shatavari-brahmi-global-demand";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "ashwagandha-extract-buyers-guide.md": {
 	id: "ashwagandha-extract-buyers-guide.md";
   slug: "ashwagandha-extract-buyers-guide";
@@ -197,9 +204,23 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"south-korea-indian-botanical-extracts-market.md": {
+	id: "south-korea-indian-botanical-extracts-market.md";
+  slug: "south-korea-indian-botanical-extracts-market";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "tulsi-holy-basil-export-guide.md": {
 	id: "tulsi-holy-basil-export-guide.md";
   slug: "tulsi-holy-basil-export-guide";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"uae-herbal-wellness-market-2025.md": {
+	id: "uae-herbal-wellness-market-2025.md";
+  slug: "uae-herbal-wellness-market-2025";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">

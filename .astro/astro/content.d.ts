@@ -183,9 +183,23 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"herbal-ingredient-traceability-supply-chain.md": {
+	id: "herbal-ingredient-traceability-supply-chain.md";
+  slug: "herbal-ingredient-traceability-supply-chain";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "how-to-evaluate-indian-herbal-ingredient-supplier.md": {
 	id: "how-to-evaluate-indian-herbal-ingredient-supplier.md";
   slug: "how-to-evaluate-indian-herbal-ingredient-supplier";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"india-natural-products-export-industry-overview.md": {
+	id: "india-natural-products-export-industry-overview.md";
+  slug: "india-natural-products-export-industry-overview";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
@@ -197,9 +211,30 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"moringa-powder-india-superfood-buyers-guide.md": {
+	id: "moringa-powder-india-superfood-buyers-guide.md";
+  slug: "moringa-powder-india-superfood-buyers-guide";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "private-label-ayurvedic-products-source-from-india.md": {
 	id: "private-label-ayurvedic-products-source-from-india.md";
   slug: "private-label-ayurvedic-products-source-from-india";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"ramadan-wellness-gifting-herbal-tea-india-uae.md": {
+	id: "ramadan-wellness-gifting-herbal-tea-india-uae.md";
+  slug: "ramadan-wellness-gifting-herbal-tea-india-uae";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"sourcing-herbal-ingredients-india-first-order-guide.md": {
+	id: "sourcing-herbal-ingredients-india-first-order-guide.md";
+  slug: "sourcing-herbal-ingredients-india-first-order-guide";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">

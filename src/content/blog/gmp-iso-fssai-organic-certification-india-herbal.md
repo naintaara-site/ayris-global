@@ -1,192 +1,226 @@
 ﻿---
-title: "GMP, ISO, FSSAI and Organic Certifications for Indian Herbal Ingredients: A Buyer's Reference"
-description: "A practical explainer for global buyers. What each certification actually means, which ones matter for your destination market, what the documents look like, and the questions to ask before you accept a supplier's certification claims."
-pubDate: 2025-06-15
+title: "GMP, ISO, FSSAI, and Organic Certification: A Buyer's Guide to Indian Herbal Ingredient Certifications"
+description: "What do GMP, ISO 22000, FSSAI, and organic certifications actually mean for Indian herbal ingredient suppliers? This guide explains each certification, what it covers, and what international buyers should require."
+pubDate: 2026-05-10
 category: "Certifications & Compliance"
-author: "Ayris Global Editorial"
-readingTime: 8
-featured: false
-image: "https://images.unsplash.com/photo-1576671081837-49000212a370?w=1200&auto=format&fit=crop&q=80"
-imageAlt: "Quality control laboratory testing herbal ingredients"
+tags: ["GMP", "ISO", "FSSAI", "organic certification", "India", "herbal ingredients", "compliance"]
+image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1200&auto=format&fit=crop"
+imageAlt: "Quality certification documents and laboratory equipment"
 ---
 
-Certifications are the vocabulary of trust in international ingredient trade. When a supplier says they are GMP-certified, ISO-compliant or FSSAI-registered, they are making a claim about their processes, their facilities and their documentation. Your job as a buyer is to know what those claims actually mean â€” and how to verify them.
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the difference between WHO-GMP and EU-GMP for Indian herbal ingredient suppliers?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "WHO-GMP is based on World Health Organisation guidelines and is recognised across many Asian, African, and Middle Eastern markets including the UAE and GCC. EU-GMP is administered by EU national competent authorities and is the most stringent GMP standard, required for ingredients entering European pharmaceutical and certain supplement supply chains. EU-GMP certification requires facility inspection by an EU regulatory authority — a significantly more demanding process. The number of Indian herbal ingredient manufacturers holding genuine EU-GMP certification is relatively small."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is NPOP organic certification recognised in the EU?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — India's NPOP (National Programme for Organic Production) certification is recognised by the EU under a bilateral equivalence agreement. NPOP-certified Indian organic products can be sold as organic in the EU without separate EU organic certification. However, NPOP is not recognised as equivalent by the US (USDA NOP). For organic claims in the US market, separate USDA NOP certification is required."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What GMP certification do I need from Indian suppliers for the US market?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For the US dietary supplement market, suppliers must be registered with the US FDA and demonstrate compliance with 21 CFR Part 111 (Current Good Manufacturing Practice for dietary supplements). FDA registration is not the same as FDA inspection or approval — it is a registration of the facility's existence. Look for suppliers who can demonstrate cGMP compliance, ideally verified by an independent third-party audit from organisations such as NSF International, SGS, or Bureau Veritas."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I verify that an Indian supplier's GMP or organic certificate is genuine?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Check the certificate validity dates — certificates require periodic renewal. Verify the certifying body is a legitimate, accredited organisation. Contact the certifying body directly to confirm the certificate's authenticity and current status. Many certification bodies maintain online registers of certified companies. FDA registration can be verified through the FDA's public establishment inventory database. Certificate fraud is a real risk in the botanical ingredient supply chain, so direct verification for significant supply relationships is worth the effort."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What Halal certification is required for Indian herbal ingredients entering the UAE and GCC?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For UAE and GCC markets, Halal certification is a market access requirement for most wellness, supplement, and food product categories. Not all Halal certifiers are recognised in all markets. The UAE's Emirates Authority for Standardisation and Metrology (ESMA) maintains a list of approved Halal certifying bodies. Buyers sourcing for UAE distribution should confirm that their supplier's Halal certification is from an ESMA-recognised body."
+      }
+    }
+  ]
+}
+</script>
 
-This reference covers the four certification categories that matter most for buyers sourcing herbal and botanical ingredients from India: GMP, ISO food safety standards, FSSAI registration, and organic certification. For each one, we explain what it is, what it covers, which markets require it, what the certificate looks like, and what to check before accepting a supplier's claim.
+When evaluating Indian herbal ingredient suppliers, international buyers encounter a range of certifications — GMP, WHO-GMP, EU-GMP, ISO 9001, ISO 22000, FSSAI, NPOP organic, USDA NOP, EU organic. Understanding what each certification actually covers — and what it does not — is essential for making informed sourcing decisions.
+
+This guide explains the major certification types relevant to Indian herbal ingredient manufacturers, what each covers, which markets require which certifications, and how to verify that certificates presented by suppliers are genuine and current.
 
 ---
 
-## GMP Certification
+## GMP Certification: The Quality Manufacturing Baseline
 
-### What it is
+Good Manufacturing Practice (GMP) certification is the most important quality credential for any herbal ingredient manufacturer supplying regulated markets. GMP standards establish requirements for manufacturing environment, equipment, personnel, documentation, process control, and quality assurance systems.
 
-Good Manufacturing Practice (GMP) is a system of quality controls governing how products are manufactured. It covers facility design, equipment, raw material handling, production processes, testing, documentation and personnel training. The goal is to ensure that every batch of a product is consistently produced and controlled to the quality standard appropriate for its intended use.
+Several GMP frameworks are relevant to Indian herbal ingredient manufacturers:
 
-For herbal ingredient buyers, GMP certification is the primary signal that a supplier operates a controlled, auditable manufacturing environment â€” not a commodity processing shed.
+### WHO-GMP
 
-### The main GMP standards you will encounter
+World Health Organisation GMP guidelines form the basis of GMP standards across much of the developing world, including India's Schedule M requirements under the Drugs and Cosmetics Act. WHO-GMP certification is recognised across many Asian, African, and Middle Eastern markets, including the UAE and GCC.
 
-**WHO-GMP**
-The World Health Organization's GMP guidelines are the most widely recognised international standard for pharmaceutical and nutraceutical ingredient manufacture. WHO-GMP certification from a recognised third-party auditor (SGS, Bureau Veritas, TÃœV, Intertek) is the baseline acceptable standard for most supplement and nutraceutical buyers globally.
+For buyers in these markets, WHO-GMP certification from a credible Indian manufacturer is a meaningful quality signal. It is not, however, equivalent to EU-GMP in scope or rigour.
 
-**EU-GMP (EudraLex Volume 4)**
-The European Medicines Agency's GMP standard. Required for active pharmaceutical ingredient (API) manufacture supplying into European pharmaceutical production. More demanding than WHO-GMP in its documentation and validation requirements. If you are sourcing for a pharmaceutical application in Europe, confirm your supplier holds EU-GMP certification, not just WHO-GMP.
+### EU-GMP
 
-**US FDA 21 CFR Part 111**
-The US Food and Drug Administration's GMP regulation for dietary supplement manufacturers. Indian suppliers exporting into the US supplement market should be able to demonstrate compliance with 21 CFR Part 111, though FDA does not issue certificates â€” compliance is demonstrated through facility registration and inspection readiness.
+European Union GMP requirements — administered by national competent authorities of EU member states and governed by the EU's Good Manufacturing Practice Directive — represent the most stringent GMP standard applicable to herbal ingredient manufacturers. EU-GMP certification (or recognition of a manufacturing facility by an EU national authority) is required for ingredients entering the European pharmaceutical and certain supplement supply chains.
 
-**Schedule M (India)**
-India's domestic GMP standard under the Drugs and Cosmetics Act. Schedule M compliance is required for domestic pharmaceutical manufacturing in India and is the baseline for Indian government-issued GMP certificates. While less demanding than WHO-GMP or EU-GMP in some respects, a current Schedule M certificate from the state drug authority confirms the facility is legally operating under India's pharmaceutical manufacturing framework.
+For Indian manufacturers, EU-GMP certification requires facility inspection by an EU regulatory authority — a significantly more demanding process than domestic GMP certification. The number of Indian herbal ingredient manufacturers holding genuine EU-GMP certification is relatively small; those who do represent a genuinely premium tier.
 
-**GMP by third-party auditors**
-Many Indian exporters hold GMP certification from international third-party bodies â€” SGS, Bureau Veritas, Intertek, TÃœV Rheinland â€” issued against codified GMP standards. These are recognised by buyers across the EU, UK, USA, UAE/GCC and East Asia.
+### US FDA Registration and cGMP
 
-### What to check on a GMP certificate
+Manufacturers exporting to the United States must be registered with the US Food and Drug Administration. For dietary supplement ingredients — which is where most botanical extracts sit — compliance with 21 CFR Part 111 (Current Good Manufacturing Practice for dietary supplements) is the relevant standard. FDA registration is not the same as FDA inspection or approval; it is a registration of the facility's existence. Buyers supplying US dietary supplement manufacturers should look for suppliers who can demonstrate cGMP compliance, ideally verified by third-party audit.
 
-- **Issuing body** â€” government authority or recognised third-party auditor. Certificates from unknown local bodies warrant independent verification.
-- **Scope** â€” which products or product categories are covered. A certificate scoped to one product line does not extend to all products the facility makes.
-- **Facility address** â€” must match the manufacturing location you are purchasing from. A company certificate that does not name a specific facility is insufficient.
-- **Issue and expiry dates** â€” GMP certificates typically run for one to three years. Confirm the certificate is current. Ask when the next surveillance audit is scheduled.
-- **Certificate number** â€” allows you to request verification from the issuing body if needed.
+### NSF International and Other Third-Party GMP Certifiers
 
-### Which markets require GMP
-
-| Market | GMP requirement |
-|---|---|
-| European Union | WHO-GMP minimum; EU-GMP for pharma API |
-| United Kingdom | WHO-GMP minimum post-Brexit; MHRA may require EU-GMP equivalence for pharma |
-| United States | FDA 21 CFR Part 111 compliance; NSF GMP certification carries market credibility |
-| UAE / GCC | WHO-GMP; some UAE importers require ESMA-recognised GMP |
-| Japan | PMDA-recognised GMP or PIC/S equivalent |
-| Korea | MFDS GMP recognition |
-| Australia | TGA overseas GMP clearance framework; PIC/S GMP preferred |
-| India (domestic) | Schedule M |
+Several internationally recognised third-party organisations — including NSF International, SGS, Bureau Veritas, and Intertek — offer GMP certification or audit services for ingredient manufacturers. Certification from these bodies provides an independently verified quality signal and is often accepted as evidence of GMP compliance by buyers across multiple markets.
 
 ---
 
-## ISO Food Safety Certifications
+## ISO Certifications: Systems Standards
 
-### What they are
+ISO certifications are management system standards, distinct from product quality certifications. They certify that a company operates its management processes in a defined, documented, and audited manner.
 
-ISO food safety certifications cover the management systems a manufacturer uses to control food safety risks across their supply chain and production processes. They are distinct from GMP, which focuses on manufacturing controls. ISO certifications focus on the system â€” the policies, procedures, monitoring mechanisms and continuous improvement processes that sit around manufacturing.
+### ISO 9001: Quality Management System
 
-The two most relevant standards for herbal ingredient buyers are ISO 22000 and FSSC 22000.
+ISO 9001 certifies that a company has implemented a quality management system meeting the ISO standard. It covers process documentation, customer focus, continual improvement, and corrective action processes. ISO 9001 is valuable as a signal of organisational maturity but does not directly address food safety or product-specific quality requirements.
 
-### ISO 22000
+### ISO 22000: Food Safety Management System
 
-ISO 22000 is the international standard for Food Safety Management Systems (FSMS). It integrates HACCP (Hazard Analysis and Critical Control Points) principles with a management system framework. Certification confirms that a manufacturer has:
-
-- Identified food safety hazards relevant to their processes
-- Implemented control measures at critical points
-- Established monitoring, verification and corrective action processes
-- Documented their system to an auditable standard
-
-ISO 22000 certification is issued by accredited certification bodies (SGS, Bureau Veritas, DNV, etc.) following an external audit. It is increasingly expected by EU and UK buyers as part of supplier approval processes, particularly for food-grade ingredients.
+ISO 22000 is more directly relevant to herbal ingredient buyers. It certifies that a company has implemented a food safety management system — covering hazard analysis, critical control points (HACCP), prerequisite programmes, and food safety risk management. For botanical ingredients used in food, beverage, or food supplement applications, ISO 22000 certification is a meaningful quality signal.
 
 ### FSSC 22000
 
-FSSC 22000 (Food Safety System Certification) is built on ISO 22000 and adds sector-specific prerequisite programmes and additional FSSC scheme requirements. It is recognised by the Global Food Safety Initiative (GFSI) â€” a benchmark that major food and supplement brands use to assess supplier quality systems.
-
-GFSI recognition makes FSSC 22000 particularly valuable for suppliers selling to large food manufacturers, private label producers and retail-facing brands who require GFSI-recognised certification from their ingredient suppliers.
-
-### ISO 9001
-
-ISO 9001 is a Quality Management System (QMS) standard â€” broader than food safety, covering the overall management of quality across an organisation's processes. It is less specific to food and ingredient manufacture than ISO 22000 or FSSC 22000, but remains a common certification among Indian exporters and demonstrates a baseline commitment to documented, auditable quality management.
-
-### What to check on ISO certificates
-
-- Accreditation body â€” the certification body issuing the ISO certificate must itself be accredited by an IAF (International Accreditation Forum) member body. Check the accreditation logo and number on the certificate.
-- Scope statement â€” confirm the scope covers the relevant manufacturing activities, not just administrative or support functions.
-- Certificate validity â€” ISO certificates are typically issued for three years with annual surveillance audits. Confirm the certificate is within its validity period.
+FSSC 22000 (Food Safety System Certification) is a GFSI (Global Food Safety Initiative)-recognised certification that builds on ISO 22000 with additional sector-specific requirements. It is accepted by major global food manufacturers and retailers as a supply chain entry requirement. Indian herbal ingredient suppliers with FSSC 22000 certification are equipped to supply into global food and beverage supply chains at a high level.
 
 ---
 
-## FSSAI Registration and Licensing
-
-### What it is
-
-The Food Safety and Standards Authority of India (FSSAI) is India's central food regulatory body, operating under the Ministry of Health and Family Welfare. FSSAI registration or licensing is mandatory for all food business operators in India â€” including manufacturers, processors, importers and exporters of food products and food ingredients.
-
-For international buyers, an FSSAI certificate from a supplier confirms two things: the supplier is legally authorised to operate as a food business in India, and the product has been manufactured under India's food safety regulatory framework.
-
-### Registration vs licensing
-
-FSSAI operates a tiered system:
-
-**FSSAI Registration** â€” for small food businesses with annual turnover below â‚¹12 lakh. Not relevant for export-scale manufacturers.
-
-**State FSSAI Licence** â€” for medium-scale food businesses operating within a single state, with turnover between â‚¹12 lakh and â‚¹20 crore.
-
-**Central FSSAI Licence** â€” for large manufacturers, importers and exporters with turnover above â‚¹20 crore, or any business engaged in import or export of food products. Export-scale herbal ingredient manufacturers should hold a Central FSSAI Licence.
-
-For international buyers, the Central FSSAI Licence is the relevant document. It should be requested as part of your standard documentation package.
-
-### How to verify FSSAI registration
-
-FSSAI maintains a public database. The 14-digit FSSAI licence number on a supplier's certificate can be verified at foscos.fssai.gov.in. This is a simple and fast verification step that confirms the licence is active and held by the entity named.
-
-If a supplier's FSSAI number does not return a valid result on the FSSAI portal, that is a significant compliance concern.
-
-### FSSAI and export documentation
-
-For herbal ingredient exports from India, the FSSAI certificate is typically included in the export documentation package alongside the phytosanitary certificate, certificate of origin and commercial invoice. Some destination market customs authorities require it as part of import clearance. Even where it is not a mandatory import document, it signals to buyers that the manufacturer is operating within India's formal food safety regulatory framework.
+> **Need suppliers who already hold the right certifications for your market?** Ayris Global works exclusively with verified, GMP-certified Indian herbal ingredient producers — pre-screened for EU, US, UAE/GCC, Japan, Korea, ANZ, and other market requirements. [View our quality standards](/quality/)
 
 ---
 
-## Organic Certification
+## FSSAI: India's Food Safety Regulator
 
-### What it is
+The Food Safety and Standards Authority of India (FSSAI) is the statutory body governing food safety and standards within India under the Food Safety and Standards Act, 2006. FSSAI licensing is a domestic regulatory requirement for food businesses operating in India, including herbal ingredient manufacturers.
 
-Organic certification confirms that a product has been produced according to defined organic farming and processing standards â€” without synthetic pesticides, synthetic fertilisers, genetically modified organisms or prohibited processing inputs. For herbal ingredients, organic certification covers both the agricultural production (farming) and the post-harvest processing (drying, extraction, milling, packaging).
+For international buyers, FSSAI compliance is relevant in two ways:
 
-Organic certification is relevant when your product carries organic labelling claims in the destination market, or when your brand positioning requires certified organic inputs throughout the supply chain.
+**As a baseline signal.** An FSSAI-licensed manufacturer is operating within India's domestic regulatory framework. While FSSAI standards are not equivalent to EU or US regulatory requirements, the absence of FSSAI licensing would be a significant concern.
 
-### The standards that matter by market
+**For specific market requirements.** Some importing country authorities recognise FSSAI as India's competent food safety authority and may accept FSSAI documentation as part of import clearance. This is market-specific and should be confirmed with your import broker.
 
-**EU Organic â€” Regulation (EU) 2018/848**
-The governing regulation for organic production and labelling in the European Union. For herbal ingredients imported into the EU under organic claims, the ingredient must be certified organic under EU Regulation 2018/848 by an approved control body. Indian organic exports to the EU are certified by APEDA-approved bodies and must comply with the EU organic import regime.
-
-Control bodies operating in India and recognised for EU organic certification include: Ecocert India, OneCert Asia, SKAL International, Control Union, LACON.
-
-**USDA Organic â€” National Organic Program (NOP)**
-The US Department of Agriculture's organic standard. Indian exporters supplying certified organic ingredients to the US market must hold NOP certification from a USDA-accredited certifier. Control bodies with NOP accreditation operating in India include: CERT ID, OneCert, Control Union, ECOCERT.
-
-**India Organic â€” NPOP**
-India's National Programme for Organic Production, administered by APEDA. NPOP certification is recognised by the EU and Switzerland under equivalency agreements, meaning NPOP-certified products can enter the EU market without re-certification under certain conditions. NPOP is not recognised as equivalent by the US NOP, so US-destined organic exports require separate NOP certification.
-
-**UK Organic**
-Post-Brexit, the UK operates its own organic regulatory framework. EU organic certification is currently accepted for imports into the UK under transitional arrangements, but buyers should confirm the current status with their regulatory adviser, as the arrangements continue to evolve.
-
-**Japanese Agricultural Standard (JAS) Organic**
-Japan's organic certification standard, administered by the Ministry of Agriculture, Forestry and Fisheries (MAFF). Indian exporters to Japan under organic claims require JAS certification from an accredited certification body.
-
-### What to check on an organic certificate
-
-- **Standard** â€” confirm it matches the destination market requirement (EU 2018/848, USDA NOP, JAS, etc.)
-- **Scope** â€” does the certificate cover the specific product you are purchasing, and does it cover both agricultural production and processing? Farming certification without processing certification does not cover the extract or powder you are buying.
-- **Certificate holder** â€” the named entity should be the manufacturer supplying you, not a third party.
-- **Control body** â€” confirm the certifying body is accredited under the relevant scheme.
-- **Valid season** â€” organic certificates are typically issued annually, covering a specific growing and production season. Confirm the certificate covers the harvest year of the batch you are purchasing.
+FSSAI licenses are categorised by turnover and operation type: Basic, State, and Central FSSAI licenses. For export-oriented manufacturers, a Central FSSAI license is the relevant category.
 
 ---
 
-## Asking for Certifications: A Practical Script
+## Organic Certifications: What They Cover and What They Don't
 
-When requesting certification documents from a prospective supplier, be specific:
+Organic certification for herbal ingredients covers the agricultural practices used to grow the raw plant material — not the manufacturing process. An organic-certified extract means the source plants were grown without synthetic pesticides, chemical fertilisers, or GMOs, under a certification scheme recognised by the target market.
 
-*"Please provide the following for your [facility name / address]: current GMP certificate with issuing body and scope; Central FSSAI licence number for verification; ISO 22000 or FSSC 22000 certificate if held; and organic certificate under [EU 2018/848 / USDA NOP / specify] for [product name], covering both agricultural production and processing."*
+Three organic certification standards are relevant for Indian herbal ingredient suppliers:
 
-Specificity matters. A general request for "your certifications" returns whatever the supplier wants to send. A specific request for named standards, covering a named facility and product, returns the documentation you actually need to evaluate.
+### NPOP: National Programme for Organic Production
+
+India's domestic organic certification standard, administered by APEDA (Agricultural and Processed Food Products Export Development Authority). NPOP certification is recognised by the EU under a bilateral equivalence agreement, meaning NPOP-certified Indian organic products can be sold as organic in the EU without separate EU organic certification. This is commercially significant — NPOP-certified Indian organic ingredients can enter the EU organic supply chain directly.
+
+NPOP is not recognised as equivalent by the US (USDA NOP) or most other markets. For US organic claims, separate USDA NOP certification is required.
+
+### USDA NOP: National Organic Program
+
+US Department of Agriculture organic certification required for organic claims in the US market. Indian manufacturers can obtain USDA NOP certification through USDA-accredited certifying agents operating in India. NOP certification adds cost and process complexity but is necessary for organic positioning in the US.
+
+### EU Organic Regulation
+
+EU organic certification (under Regulation EU 2018/848) covers both production and processing of organic products. As noted above, NPOP-certified Indian products currently benefit from EU equivalence recognition. Buyers should confirm current equivalence status, as these arrangements are subject to periodic review.
 
 ---
 
-## How Ayris Global Manages Certification Compliance
+## Halal Certification: A Market Access Requirement for GCC and Muslim-Majority Markets
 
-Every manufacturer in Ayris Global's supplier network is evaluated against certification requirements before onboarding. We maintain current copies of GMP, ISO, FSSAI and organic certificates for each facility we work with and track renewal dates to ensure you are never supplied under an expired certification.
+For buyers supplying the UAE, GCC, and other Muslim-majority markets, Halal certification is not optional — it is a market access requirement for most wellness, supplement, and food product categories.
 
-When you submit a sourcing enquiry, we match your destination market and product specification to a supplier who holds the certifications your regulatory environment requires â€” before we make an introduction.
+Indian herbal ingredient manufacturers can obtain Halal certification from a range of certifying bodies. However, not all Halal certifiers are recognised in all markets. The UAE's Emirates Authority for Standardisation and Metrology (ESMA) maintains a list of approved Halal certifying bodies; buyers sourcing for UAE distribution should confirm that their supplier's Halal certification is from an ESMA-recognised body.
 
-For buyers managing multiple destination markets with different certification requirements, we coordinate the documentation package so that each shipment arrives with the correct certification set for its import market.
+Halal certification for botanical ingredient manufacturing typically covers: absence of prohibited substances, manufacturing process compliance (no cross-contamination with non-Halal materials), and appropriate slaughter practices if animal-derived processing aids are used (relevant for gelatin capsules and some extraction processes).
 
-[Submit a sourcing enquiry](/contact/) to discuss your ingredient requirements and we will respond within one business day.
+---
 
+## How to Verify That Certificates Are Genuine
+
+Certificate fraud — the presentation of falsified or expired certificates — is a real risk in the global botanical ingredient supply chain. The following verification steps reduce this risk:
+
+**Check validity dates.** Certificates have issue dates and expiry dates. Confirm that the certificate presented is current. GMP certificates typically require annual or biennial renewal following audit.
+
+**Verify the certifying body.** Confirm that the organisation that issued the certificate is a legitimate, accredited certifying body. For GMP certificates, the issuing body should be a recognised national or international certification organisation. For organic certificates, the certifying agent should be accredited under the relevant programme (USDA, EU, NPOP).
+
+**Contact the certifying body directly.** For significant supply relationships, contact the certifying body named on the certificate to confirm the certificate's authenticity and current status. Most certification bodies maintain online registers of certified companies.
+
+**Cross-reference with public databases.** FDA registration can be verified through the FDA's public establishment inventory database. Some certification bodies publish searchable registries of certified companies.
+
+---
+
+## Certification Requirements by Market: Quick Reference
+
+| Market | Key Requirements |
+|--------|-----------------|
+| European Union | EU-GMP or WHO-GMP, EU Organic (or NPOP equivalent), relevant EU food safety standards |
+| United States | FDA registration, cGMP compliance (21 CFR 111), USDA NOP for organic claims |
+| UAE / GCC | WHO-GMP, Halal (ESMA-recognised body), CEPA Certificate of Origin |
+| United Kingdom | UK-GMP (post-Brexit equivalent), UK organic certification |
+| Japan | JHFA or relevant Japanese standards; J-GMP for pharmaceutical-grade |
+| South Korea | MFDS compliance; Korean Health Functional Food registration requirements |
+| Australia / NZ | TGA registration for therapeutic goods; FSANZ compliance for food ingredients |
+
+---
+
+## Summary
+
+Understanding the certification landscape for Indian herbal ingredient suppliers is not complexity for its own sake — it directly determines whether your ingredients can legally enter your target market, whether your finished products can make the claims you intend, and whether your supply chain will withstand regulatory scrutiny.
+
+The strongest Indian herbal ingredient suppliers hold multiple certifications relevant to global markets — GMP, ISO 22000, organic, and Halal — and can provide current, verifiable documentation for each. These are the suppliers worth building long-term relationships with.
+
+---
+
+## Frequently Asked Questions
+
+**What is the difference between WHO-GMP and EU-GMP for Indian herbal ingredient suppliers?**
+
+WHO-GMP is recognised across many Asian, African, and Middle Eastern markets including the UAE and GCC. EU-GMP is the most stringent standard, requiring facility inspection by an EU regulatory authority. It is required for ingredients entering European pharmaceutical and certain supplement supply chains. The number of Indian manufacturers holding genuine EU-GMP certification is relatively small — those who do represent a genuinely premium tier.
+
+**Is NPOP organic certification recognised in the EU?**
+
+Yes — India's NPOP certification is recognised by the EU under a bilateral equivalence agreement. NPOP-certified Indian organic products can be sold as organic in the EU without separate EU organic certification. However, NPOP is not recognised by the US. For organic claims in the US market, separate USDA NOP certification is required.
+
+**What GMP certification do I need from Indian suppliers for the US market?**
+
+Suppliers must be registered with the US FDA and demonstrate compliance with 21 CFR Part 111 (cGMP for dietary supplements). FDA registration is a registration of the facility's existence — not an inspection or approval. Look for suppliers who can demonstrate cGMP compliance verified by independent third-party audit from recognised bodies such as NSF International, SGS, or Bureau Veritas.
+
+**How do I verify that an Indian supplier's GMP or organic certificate is genuine?**
+
+Check validity dates, verify the certifying body is legitimate and accredited, and contact the certifying body directly to confirm authenticity and current status. Many certification bodies maintain online registers of certified companies. FDA registration can be verified through the FDA's public establishment inventory database. Certificate fraud is a real risk — direct verification is always worth doing for significant supply relationships.
+
+**What Halal certification is required for Indian herbal ingredients entering the UAE and GCC?**
+
+Halal certification is a market access requirement for most wellness, supplement, and food categories in the UAE and GCC. Not all Halal certifiers are recognised across all GCC markets. The UAE's ESMA maintains a list of approved Halal certifying bodies. Always confirm that your supplier's Halal certification is from an ESMA-recognised body before committing to supply for UAE distribution.
+
+---
+
+**Further Reading:** [CoA, MSDS & Phytosanitary Certificates Explained](/blog/coa-msds-phytosanitary-certificates-herbal-imports/) · [Herbal Ingredient Traceability & Supply Chain Integrity](/blog/herbal-ingredient-traceability-supply-chain/) · [How to Evaluate an Indian Herbal Ingredient Supplier](/blog/how-to-evaluate-indian-herbal-ingredient-supplier/)
+
+---
+
+*Ayris Global works exclusively with Indian herbal ingredient suppliers who hold the certifications relevant to your target market. To discuss supplier qualification for your specific requirements, visit our [Quality page](/quality/) or contact us at [sourcing@ayrisglobal.in](mailto:sourcing@ayrisglobal.in).*

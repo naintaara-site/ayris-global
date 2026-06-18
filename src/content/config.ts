@@ -17,6 +17,7 @@ const blog = defineCollection({
     featured: z.boolean().default(false),
     image: z.string().optional(),
     imageAlt: z.string().optional(),
+    faqSchema: z.string().optional(),
   }),
 });
 export const collections = { blog };

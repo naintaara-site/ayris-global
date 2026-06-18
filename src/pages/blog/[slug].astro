@@ -1,7 +1,6 @@
 ---
 import { getCollection, type CollectionEntry } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
-
 export async function getStaticPaths() {
   const posts = await getCollection('blog');
   return posts.map((post) => ({
@@ -9,22 +8,22 @@ export async function getStaticPaths() {
     props: { post },
   }));
 }
-
 type Props = {
   post: CollectionEntry<'blog'>;
 };
-
 const { post } = Astro.props;
 const { Content } = await post.render();
-
 const formattedDate = new Date(post.data.pubDate).toLocaleDateString('en-GB', {
   day: 'numeric',
   month: 'long',
   year: 'numeric',
 });
+const faqSchema = post.data.faqSchema;
 ---
-
 <BaseLayout title={post.data.title} description={post.data.description}>
+
+  <!-- FAQ JSON-LD Schema (injected via head slot when faqSchema frontmatter is present) -->
+  {faqSchema && <script type="application/ld+json" set:html={faqSchema} slot="head" />}
 
   <!-- Hero -->
   <section style="background: #1B2B4B; padding: 80px 24px 60px;">
@@ -40,11 +39,9 @@ const formattedDate = new Date(post.data.pubDate).toLocaleDateString('en-GB', {
       </p>
     </div>
   </section>
-
   <!-- Content -->
   <section style="background: #FAFAF8; padding: 60px 24px 80px;">
     <div style="max-width: 800px; margin: 0 auto;">
-
       {post.data.image && (
         <img
           src={post.data.image}
@@ -52,23 +49,18 @@ const formattedDate = new Date(post.data.pubDate).toLocaleDateString('en-GB', {
           style="width: 100%; height: 400px; object-fit: cover; border-radius: 8px; margin-bottom: 48px;"
         />
       )}
-
       <div class="prose">
         <Content />
       </div>
-
       <!-- Back link -->
       <div style="margin-top: 64px; padding-top: 32px; border-top: 1px solid #e5e7eb;">
         <a href="/blog/" style="color: #C9A84C; font-family: Inter, sans-serif; font-weight: 600; text-decoration: none; font-size: 0.95rem;">
           ← Back to Insights
         </a>
       </div>
-
     </div>
   </section>
-
 </BaseLayout>
-
 <style>
   .prose {
     font-family: Inter, sans-serif;

@@ -1,8 +1,9 @@
-﻿---
+---
 title: "India-UAE CEPA and Herbal Ingredients: What Buyers and Suppliers Need to Know"
 description: "How the India-UAE Comprehensive Economic Partnership Agreement (CEPA) affects tariffs, documentation, and sourcing economics for herbal ingredients, botanical extracts, and Ayurvedic products — with practical guidance for procurement teams."
 pubDate: 2026-06-13
-category: "Market Insights"
+category: "market-intelligence"
+region_tags: ["uae-gcc"]
 tags: ["India UAE CEPA", "herbal ingredients", "tariff reduction", "botanical extracts", "Ayurvedic sourcing", "GCC trade", "India trade agreement"]
 image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=1200&auto=format&fit=crop"
 author: "Ayris Global Sourcing Intelligence"

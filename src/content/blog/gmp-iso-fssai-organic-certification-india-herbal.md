@@ -1,8 +1,8 @@
-﻿---
+---
 title: "GMP, ISO, FSSAI, and Organic Certification: A Buyer's Guide to Indian Herbal Ingredient Certifications"
 description: "What do GMP, ISO 22000, FSSAI, and organic certifications actually mean for Indian herbal ingredient suppliers? This guide explains each certification, what it covers, and what international buyers should require."
 pubDate: 2026-05-10
-category: "Certifications & Compliance"
+category: "certifications"
 tags: ["GMP", "ISO", "FSSAI", "organic certification", "India", "herbal ingredients", "compliance"]
 image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1200&auto=format&fit=crop"
 imageAlt: "Quality certification documents and laboratory equipment"

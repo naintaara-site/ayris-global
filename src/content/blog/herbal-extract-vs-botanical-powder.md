@@ -1,8 +1,8 @@
-﻿---
+---
 title: "Herbal Extract vs Botanical Powder: What International Buyers Need to Know"
 description: "Understanding the difference between herbal extracts and botanical powders and knowing which is right for your application is fundamental to effective ingredient sourcing from India."
 pubDate: 2026-05-20
-category: "Buyer Guides"
+category: "ingredients"
 tags: ["herbal extract", "botanical powder", "standardised extract", "sourcing", "nutraceuticals", "formulation"]
 image: "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=1200&auto=format&fit=crop"
 imageAlt: "Various herbal powders and botanical extracts in bowls"

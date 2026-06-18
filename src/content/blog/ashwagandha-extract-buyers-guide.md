@@ -1,8 +1,8 @@
-﻿---
+---
 title: "Ashwagandha Extract: A Complete Buyer's Guide for Global Ingredient Sourcing"
 description: "Everything international buyers need to know about sourcing ashwagandha extract from India - specifications, certifications, quality markers, and supplier evaluation."
 pubDate: 2026-05-01
-category: "Buyer Guides"
+category: "ingredients"
 tags: ["ashwagandha", "botanical extracts", "sourcing", "India", "withanolides", "nutraceuticals"]
 image: "https://images.unsplash.com/photo-1611241893603-3c359704e0ee?w=1200&auto=format&fit=crop"
 imageAlt: "Ashwagandha root and powder on a wooden surface"

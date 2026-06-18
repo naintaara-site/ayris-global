@@ -1,8 +1,8 @@
-﻿---
+---
 title: "How to Evaluate an Indian Herbal Ingredient Supplier: A Practical Framework for International Buyers"
 description: "A step-by-step framework for evaluating Indian herbal ingredient suppliers - covering quality systems, certifications, documentation, sampling, and relationship assessment."
 pubDate: 2026-05-05
-category: "Buyer Guides"
+category: "sourcing"
 tags: ["supplier evaluation", "India", "herbal ingredients", "quality", "sourcing", "due diligence"]
 image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200&auto=format&fit=crop"
 imageAlt: "Professional reviewing documents and conducting supplier evaluation"

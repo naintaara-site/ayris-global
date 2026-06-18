@@ -1,8 +1,9 @@
-﻿---
+---
 title: "South Korea and Indian Botanical Extracts: A Market Opportunity for Serious Suppliers"
 description: "South Korea is one of the world's most sophisticated wellness markets. Here is what Indian botanical extract suppliers need to understand about Korean buyer requirements, regulatory pathways, and the opportunity in 2025."
 pubDate: 2026-06-14
-category: "Market Insights"
+category: "market-intelligence"
+region_tags: ["korea"]
 tags: ["South Korea", "botanical extracts", "K-beauty", "nutraceuticals", "herbal ingredients", "export", "market intelligence"]
 image: "https://images.unsplash.com/photo-1545558014-8692077e9b5c?w=1200&auto=format&fit=crop"
 imageAlt: "Korean wellness and beauty products representing the South Korean botanical market"

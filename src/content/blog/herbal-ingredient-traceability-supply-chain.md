@@ -1,8 +1,8 @@
-﻿---
+---
 title: "Herbal Ingredient Traceability: What International Buyers Need to Know About Supply Chain Transparency"
 description: "Traceability is no longer optional for herbal ingredient buyers. Regulations from the EU and USA are tightening, adulteration risks are real, and buyers who cannot document their supply chain are losing market access. Here is what you need to know."
 pubDate: 2026-06-14
-category: "Buyer Guides"
+category: "sourcing"
 tags: ["traceability", "supply chain", "herbal ingredients", "botanical extracts", "FSMA", "EUDR", "adulteration", "quality assurance", "sourcing"]
 image: "https://images.unsplash.com/photo-1576086213369-97a306d36557?w=1200&auto=format&fit=crop"
 imageAlt: "Herbal plant materials being sorted and documented for supply chain traceability"

@@ -1,8 +1,8 @@
-﻿---
+---
 title: "Private Label Ayurvedic Products: How to Source from India Successfully"
 description: "A complete guide for brand owners and product developers looking to source private label Ayurvedic and herbal products from India — covering manufacturer selection, formulation, regulatory compliance, MOQs, and quality assurance."
 pubDate: 2026-06-13
-category: "Buyer Guides"
+category: "sourcing"
 tags: ["private label", "Ayurvedic products", "source from India", "contract manufacturing", "herbal supplements", "botanical ingredients", "OEM India"]
 image: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=1200&auto=format&fit=crop"
 author: "Ayris Global Sourcing Intelligence"

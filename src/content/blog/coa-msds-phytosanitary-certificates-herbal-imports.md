@@ -1,8 +1,8 @@
-﻿---
+---
 title: "CoA, MSDS and Phytosanitary Certificates: The Complete Import Documentation Guide for Herbal Ingredients"
 description: "A practical guide to the key documents required when importing herbal ingredients from India — Certificate of Analysis, MSDS, phytosanitary certificates, and what to check in each."
 pubDate: 2026-06-13
-category: "Certifications & Compliance"
+category: "certifications"
 tags: ["CoA", "MSDS", "phytosanitary certificate", "import documentation", "herbal ingredients", "compliance"]
 image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1200&q=80"
 ---

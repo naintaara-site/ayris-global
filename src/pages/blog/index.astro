@@ -7,22 +7,23 @@ const sorted = allPosts.sort(
   (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 );
 
-const categories = [
-  'All',
-  'Buyer Guides',
-  'Sourcing Intelligence',
-  'Certifications & Compliance',
-  'Market Insights',
-  'Ingredient Spotlights',
-];
-
-const categoryColors: Record<string, string> = {
-  'Buyer Guides': '#2563EB',
-  'Sourcing Intelligence': '#0F766E',
-  'Certifications & Compliance': '#7C3AED',
-  'Market Insights': '#B45309',
-  'Ingredient Spotlights': '#15803D',
+const categoryMeta: Record<string, { label: string; color: string }> = {
+  'ingredients': { label: 'Ingredients & Botanicals', color: '#15803D' },
+  'certifications': { label: 'Certifications & Compliance', color: '#7C3AED' },
+  'sourcing': { label: 'Sourcing & Trade', color: '#0F766E' },
+  'market-intelligence': { label: 'Market Intelligence', color: '#B45309' },
 };
+
+const categoryKeys = ['all', ...Object.keys(categoryMeta)];
+
+function catLabel(key: string) {
+  if (key === 'all') return 'All';
+  return categoryMeta[key]?.label || key;
+}
+
+function catColor(key: string) {
+  return categoryMeta[key]?.color || '#1B2B4B';
+}
 
 function formatDate(date: Date) {
   return date.toLocaleDateString('en-GB', {
@@ -38,7 +39,7 @@ function formatDate(date: Date) {
   description="Expert guidance on sourcing certified Indian herbal ingredients — buyer guides, certification explainers, supplier evaluation checklists, and market intelligence for global procurement teams."
 >
 
-  <!-- ── Hero ─────────────────────────────────────── -->
+  <!-- Hero -->
   <section class="blog-hero">
     <div class="blog-hero__inner">
       <span class="blog-hero__eyebrow">Intelligence. Insight. Advantage.</span>
@@ -49,26 +50,26 @@ function formatDate(date: Date) {
     </div>
   </section>
 
-  <!-- ── Category Filter ───────────────────────────── -->
+  <!-- Category Filter -->
   <section class="filter-bar">
     <div class="filter-bar__inner">
       <p class="filter-bar__label">Filter by topic:</p>
       <div class="filter-pills" role="tablist" aria-label="Filter posts by category">
-        {categories.map((cat) => (
+        {categoryKeys.map((key) => (
           <button
             class="pill"
-            data-category={cat}
+            data-category={key}
             role="tab"
-            aria-selected={cat === 'All' ? 'true' : 'false'}
+            aria-selected={key === 'all' ? 'true' : 'false'}
           >
-            {cat}
+            {catLabel(key)}
           </button>
         ))}
       </div>
     </div>
   </section>
 
-  <!-- ── Post Grid ─────────────────────────────────── -->
+  <!-- Post Grid -->
   <section class="posts-section">
     <div class="posts-section__inner">
 
@@ -79,7 +80,7 @@ function formatDate(date: Date) {
           {sorted.map((post) => {
             const slug = post.slug;
             const { title, description, pubDate, category, readingTime, image, imageAlt } = post.data;
-            const color = categoryColors[category] || '#1B2B4B';
+            const color = catColor(category);
             return (
               <article class="post-card" data-category={category}>
                 <a href={`/blog/${slug}/`} class="post-card__link" aria-label={title}>
@@ -99,7 +100,7 @@ function formatDate(date: Date) {
                         </svg>
                       </div>
                     )}
-                    <span class="post-card__badge" style={`background:${color}`}>{category}</span>
+                    <span class="post-card__badge" style={`background:${color}`}>{catLabel(category)}</span>
                   </div>
                   <div class="post-card__body">
                     <h2 class="post-card__title">{title}</h2>
@@ -126,11 +127,11 @@ function formatDate(date: Date) {
     </div>
   </section>
 
-  <!-- ── Bottom CTA ────────────────────────────────── -->
+  <!-- Bottom CTA -->
   <section class="blog-cta">
     <div class="blog-cta__inner">
       <h2>Have a sourcing requirement?</h2>
-      <p>Our team works with verified Indian manufacturers to supply certified herbal ingredients globally. Submit an enquiry and we'll respond within one business day.</p>
+      <p>Our team works with verified Indian manufacturers to supply certified herbal ingredients globally. Submit an enquiry and we’ll respond within one business day.</p>
       <div class="blog-cta__btns">
         <a href="/contact/" class="btn-primary">Submit a Sourcing Enquiry</a>
         <a href="/for-buyers/" class="btn-secondary">How We Work</a>
@@ -140,7 +141,7 @@ function formatDate(date: Date) {
 
 </BaseLayout>
 
-<!-- ── Filter Script ─────────────────────────────── -->
+<!-- Filter Script -->
 <script>
   const pills = document.querySelectorAll<HTMLButtonElement>('.pill');
   const cards = document.querySelectorAll<HTMLElement>('.post-card');
@@ -158,7 +159,7 @@ function formatDate(date: Date) {
 
     cards.forEach((card) => {
       const show =
-        selectedCategory === 'All' || card.dataset.category === selectedCategory;
+        selectedCategory === 'all' || card.dataset.category === selectedCategory;
       card.style.display = show ? '' : 'none';
       if (show) visible++;
     });
@@ -168,20 +169,18 @@ function formatDate(date: Date) {
     }
   }
 
-  // Initialise
-  filterPosts('All');
+  filterPosts('all');
 
   pills.forEach((pill) => {
     pill.addEventListener('click', () => {
-      filterPosts(pill.dataset.category || 'All');
+      filterPosts(pill.dataset.category || 'all');
     });
   });
 
-  resetBtn?.addEventListener('click', () => filterPosts('All'));
+  resetBtn?.addEventListener('click', () => filterPosts('all'));
 </script>
 
 <style>
-  /* ── Hero ──────────────────────────────────────────── */
   .blog-hero {
     background: linear-gradient(135deg, #1B2B4B 0%, #243d6b 100%);
     padding: 5rem 1.5rem 4rem;
@@ -219,7 +218,6 @@ function formatDate(date: Date) {
     margin: 0 auto;
   }
 
-  /* ── Filter bar ────────────────────────────────────── */
   .filter-bar {
     background: #fff;
     border-bottom: 1px solid #e8e3d9;
@@ -281,7 +279,6 @@ function formatDate(date: Date) {
     font-weight: 700;
   }
 
-  /* ── Posts section ─────────────────────────────────── */
   .posts-section {
     background: #FAFAF8;
     padding: 3.5rem 1.5rem 5rem;
@@ -333,7 +330,6 @@ function formatDate(date: Date) {
     font-family: inherit;
   }
 
-  /* ── Post card ─────────────────────────────────────── */
   .post-card {
     background: #fff;
     border-radius: 12px;
@@ -357,7 +353,6 @@ function formatDate(date: Date) {
     color: inherit;
   }
 
-  /* Card image */
   .post-card__image-wrap {
     position: relative;
     height: 200px;
@@ -399,7 +394,6 @@ function formatDate(date: Date) {
     color: #fff;
   }
 
-  /* Card body */
   .post-card__body {
     padding: 1.35rem 1.4rem 1.5rem;
     display: flex;
@@ -438,7 +432,6 @@ function formatDate(date: Date) {
 
   .post-card__meta-sep { opacity: 0.5; }
 
-  /* ── Bottom CTA ─────────────────────────────────────── */
   .blog-cta {
     background: linear-gradient(135deg, #1B2B4B 0%, #243d6b 100%);
     padding: 5rem 1.5rem;

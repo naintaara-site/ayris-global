@@ -33,6 +33,37 @@ const whatsappMessage = encodeURIComponent('Hello Ayris Global, I am interested 
 const whatsappURL = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`;
 const currentPath = Astro.url.pathname;
 const orgSchemaJson = "{\"@context\":\"https://schema.org\",\"@type\":\"Organization\",\"name\":\"Ayris Global\",\"url\":\"https://ayrisglobal.in\",\"logo\":\"https://ayrisglobal.in/logo.png\",\"description\":\"Premium Indian wellness ingredient sourcing for international buyers.\",\"address\":{\"@type\":\"PostalAddress\",\"addressLocality\":\"Mumbai\",\"addressCountry\":\"IN\"},\"contactPoint\":{\"@type\":\"ContactPoint\",\"email\":\"sourcing@ayrisglobal.in\",\"contactType\":\"sales\"},\"sameAs\":[]}";
+
+// BreadcrumbList structured data (skip homepage)
+const pathname = Astro.url.pathname;
+const breadcrumbItems = [];
+
+if (pathname !== '/') {
+  breadcrumbItems.push({ name: 'Home', url: 'https://ayrisglobal.in/' });
+
+  const isBlogPost = pathname.startsWith('/blog/') && pathname !== '/blog/';
+  if (isBlogPost) {
+    breadcrumbItems.push({ name: 'Blog', url: 'https://ayrisglobal.in/blog/' });
+    breadcrumbItems.push({ name: title, url: 'https://ayrisglobal.in' + pathname });
+  } else if (pathname === '/blog/') {
+    breadcrumbItems.push({ name: 'Blog', url: 'https://ayrisglobal.in/blog/' });
+  } else {
+    breadcrumbItems.push({ name: title, url: 'https://ayrisglobal.in' + pathname });
+  }
+}
+
+const breadcrumbSchemaJson = breadcrumbItems.length > 0
+  ? JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": breadcrumbItems.map((item, i) => ({
+        "@type": "ListItem",
+        "position": i + 1,
+        "name": item.name,
+        "item": item.url,
+      })),
+    })
+  : null;
 ---
 
 <!DOCTYPE html>
@@ -65,6 +96,7 @@ const orgSchemaJson = "{\"@context\":\"https://schema.org\",\"@type\":\"Organiza
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> -->
   <script type="application/ld+json" set:html={orgSchemaJson} />
+  {breadcrumbSchemaJson && <script type="application/ld+json" set:html={breadcrumbSchemaJson} />}
   <slot name="head" />
 </head>
 

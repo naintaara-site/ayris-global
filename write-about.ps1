@@ -1,3 +1,7 @@
+$noBom = New-Object System.Text.UTF8Encoding $false
+$path = "src\pages\about.astro"
+
+$content = @'
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 ---
@@ -412,3 +416,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     .intro__certs-preview { grid-template-columns: repeat(2, 1fr); }
   }
 </style>
+'@
+
+$fullPath = Join-Path $pwd $path
+[System.IO.File]::WriteAllText($fullPath, $content, $noBom)
+Write-Host "Wrote $fullPath with no-BOM UTF8 encoding."

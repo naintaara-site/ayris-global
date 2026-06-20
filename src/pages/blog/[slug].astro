@@ -19,6 +19,35 @@ const formattedDate = new Date(post.data.pubDate).toLocaleDateString('en-GB', {
   year: 'numeric',
 });
 const faqSchema = post.data.faqSchema;
+
+const categoryMeta: Record<string, { label: string; color: string }> = {
+  'ingredients': { label: 'Ingredients & Botanicals', color: '#15803D' },
+  'certifications': { label: 'Certifications & Compliance', color: '#7C3AED' },
+  'sourcing': { label: 'Sourcing & Trade', color: '#0F766E' },
+  'market-intelligence': { label: 'Market Intelligence', color: '#B45309' },
+};
+
+function regionOverlapCount(a?: string[], b?: string[]) {
+  if (!a || !b) return 0;
+  return a.filter((tag) => b.includes(tag)).length;
+}
+
+const allPosts = await getCollection('blog');
+const candidates = allPosts.filter((p) => p.slug !== post.slug);
+
+const relatedPosts = candidates
+  .map((p) => {
+    const sameCategory = p.data.category === post.data.category;
+    const overlap = regionOverlapCount(post.data.region_tags, p.data.region_tags);
+    return { post: p, sameCategory, overlap };
+  })
+  .filter((c) => c.sameCategory || c.overlap > 0)
+  .sort((a, b) => {
+    if (a.sameCategory !== b.sameCategory) return a.sameCategory ? -1 : 1;
+    return b.overlap - a.overlap;
+  })
+  .slice(0, 3)
+  .map((c) => c.post);
 ---
 <BaseLayout title={post.data.title} description={post.data.description}>
 
@@ -35,7 +64,8 @@ const faqSchema = post.data.faqSchema;
         {post.data.title}
       </h1>
       <p style="color: #FAFAF8; opacity: 0.7; font-family: Inter, sans-serif; font-size: 0.95rem;">
-        {formattedDate} &nbsp;·&nbsp; {post.data.readTime}
+        {formattedDate}
+        {post.data.readingTime && <>&nbsp;&middot;&nbsp;{post.data.readingTime} min read</>}
       </p>
     </div>
   </section>
@@ -52,10 +82,45 @@ const faqSchema = post.data.faqSchema;
       <div class="prose">
         <Content />
       </div>
+
+      {relatedPosts.length > 0 && (
+        <div class="related-articles">
+          <h2 class="related-articles__title">Related Articles</h2>
+          <div class="related-grid">
+            {relatedPosts.map((rp) => {
+              const color = categoryMeta[rp.data.category]?.color || '#1B2B4B';
+              const label = categoryMeta[rp.data.category]?.label || rp.data.category;
+              return (
+                <a href={`/blog/${rp.slug}/`} class="related-card">
+                  <div class="related-card__image-wrap">
+                    {rp.data.image ? (
+                      <img
+                        src={rp.data.image}
+                        alt={rp.data.imageAlt || rp.data.title}
+                        class="related-card__image"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    ) : (
+                      <div class="related-card__image-fallback"></div>
+                    )}
+                    <span class="related-card__badge" style={`background:${color}`}>{label}</span>
+                  </div>
+                  <div class="related-card__body">
+                    <h3 class="related-card__title">{rp.data.title}</h3>
+                    <p class="related-card__desc">{rp.data.description}</p>
+                  </div>
+                </a>
+              );
+            })}
+          </div>
+        </div>
+      )}
+
       <!-- Back link -->
       <div style="margin-top: 64px; padding-top: 32px; border-top: 1px solid #e5e7eb;">
         <a href="/blog/" style="color: #C9A84C; font-family: Inter, sans-serif; font-weight: 600; text-decoration: none; font-size: 0.95rem;">
-          ← Back to Insights
+          &larr; Back to Insights
         </a>
       </div>
     </div>
@@ -106,5 +171,114 @@ const faqSchema = post.data.faqSchema;
     margin-left: 0;
     color: #4B5563;
     font-style: italic;
+  }
+
+  .related-articles {
+    margin-top: 64px;
+    padding-top: 48px;
+    border-top: 1px solid #e5e7eb;
+  }
+
+  .related-articles__title {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.5rem;
+    color: #1B2B4B;
+    margin-bottom: 28px;
+  }
+
+  .related-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  @media (max-width: 900px) {
+    .related-grid { grid-template-columns: repeat(2, 1fr); }
+  }
+
+  @media (max-width: 580px) {
+    .related-grid { grid-template-columns: 1fr; }
+  }
+
+  .related-card {
+    background: #fff;
+    border-radius: 12px;
+    border: 1px solid #e8e3d9;
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .related-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(27,43,75,0.12);
+  }
+
+  .related-card__image-wrap {
+    position: relative;
+    height: 140px;
+    overflow: hidden;
+    background: #1B2B4B;
+    flex-shrink: 0;
+  }
+
+  .related-card__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+  }
+
+  .related-card:hover .related-card__image {
+    transform: scale(1.04);
+  }
+
+  .related-card__image-fallback {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #1B2B4B 0%, #243d6b 100%);
+  }
+
+  .related-card__badge {
+    position: absolute;
+    bottom: 0.6rem;
+    left: 0.6rem;
+    padding: 0.18rem 0.6rem;
+    border-radius: 999px;
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #fff;
+  }
+
+  .related-card__body {
+    padding: 1rem 1.1rem 1.2rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  .related-card__title {
+    font-family: 'DM Serif Display', serif;
+    font-size: 0.95rem;
+    color: #1B2B4B;
+    line-height: 1.35;
+    margin: 0 0 0.5rem;
+  }
+
+  .related-card__desc {
+    font-size: 0.8rem;
+    color: #555;
+    line-height: 1.6;
+    margin: 0;
+    flex: 1;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
 </style>

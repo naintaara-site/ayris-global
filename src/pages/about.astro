@@ -1,11 +1,15 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+const dannySchemaJson = "{\"@context\":\"https://schema.org\",\"@type\":\"Person\",\"name\":\"Danny\",\"jobTitle\":\"Co-Founder\",\"worksFor\":{\"@type\":\"Organization\",\"name\":\"Ayris Global\",\"url\":\"https://ayrisglobal.in\"},\"description\":\"Co-Founder of Ayris Global. Background in the Indian Armed Forces with first-hand exposure to India's ecosystems, traditional knowledge systems, and natural resources across the country.\",\"sameAs\":[]}";
+const nehaSchemaJson = "{\"@context\":\"https://schema.org\",\"@type\":\"Person\",\"name\":\"Neha\",\"jobTitle\":\"Co-Founder\",\"worksFor\":{\"@type\":\"Organization\",\"name\":\"Ayris Global\",\"url\":\"https://ayrisglobal.in\"},\"description\":\"Co-Founder of Ayris Global. From a multi-generational trading family in Hoshiarpur, Punjab, with early grounding in India's traditional remedies and natural living practices.\",\"sameAs\":[]}";
 ---
 
 <BaseLayout
   title="About Ayris Global: Intelligence, Connection, Growth"
   description="Ayris Global connects global wellness buyers with verified Indian herbal ingredient producers, across the EU, UK, USA, UAE/GCC, Japan, Korea, ANZ, SEA and LatAm."
 >
+  <script type="application/ld+json" set:html={dannySchemaJson} slot="head" />
+  <script type="application/ld+json" set:html={nehaSchemaJson} slot="head" />
 
   <!-- HERO -->
   <section class="page-hero">

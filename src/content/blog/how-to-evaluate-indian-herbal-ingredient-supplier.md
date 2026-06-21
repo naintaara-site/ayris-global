@@ -4,7 +4,7 @@ description: "A step-by-step framework for evaluating Indian herbal ingredient s
 pubDate: 2026-05-05
 category: "sourcing"
 tags: ["supplier evaluation", "India", "herbal ingredients", "quality", "sourcing", "due diligence"]
-image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200&auto=format&fit=crop"
+image: "/images/blog/blog-how-to-evaluate-indian-herbal-ingredient-supplier.jpg"
 imageAlt: "Professional reviewing documents and conducting supplier evaluation"
 faqSchema: |
   {

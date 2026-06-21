@@ -5,7 +5,7 @@ pubDate: 2026-06-14
 category: "market-intelligence"
 region_tags: ["uae-gcc"]
 tags: ["Ramadan", "UAE", "GCC", "herbal tea", "wellness gifting", "corporate gifting", "tulsi", "ashwagandha", "halal", "India"]
-image: "https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=1200&auto=format&fit=crop"
+image: "/images/blog/blog-ramadan-wellness-gifting-herbal-tea-india-uae.jpg"
 imageAlt: "Herbal teas and wellness products arranged as a Ramadan gift hamper"
 ---
 

@@ -4,7 +4,7 @@ description: "India exports nearly $700 million in herbal and Ayurvedic products
 pubDate: 2026-06-14
 category: "market-intelligence"
 tags: ["India herbal export", "botanical extracts", "Ayurvedic ingredients", "natural products", "sourcing", "nutraceuticals", "herbal ingredients", "export industry"]
-image: "https://images.unsplash.com/photo-1615485290382-441e4d049cb5?w=1200&auto=format&fit=crop"
+image: "/images/blog/blog-india-natural-products-export-industry-overview.jpg"
 imageAlt: "Dried herbs and botanical ingredients arranged for export from India"
 ---
 

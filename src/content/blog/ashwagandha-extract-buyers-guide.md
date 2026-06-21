@@ -4,7 +4,7 @@ description: "Everything international buyers need to know about sourcing ashwag
 pubDate: 2026-05-01
 category: "ingredients"
 tags: ["ashwagandha", "botanical extracts", "sourcing", "India", "withanolides", "nutraceuticals"]
-image: "https://images.unsplash.com/photo-1611241893603-3c359704e0ee?w=1200&auto=format&fit=crop"
+image: "/images/blog/blog-ashwagandha-extract-buyers-guide.jpg"
 imageAlt: "Ashwagandha root and powder on a wooden surface"
 faqSchema: |
   {

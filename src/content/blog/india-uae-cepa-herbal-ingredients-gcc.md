@@ -5,7 +5,8 @@ pubDate: 2026-06-13
 category: "market-intelligence"
 region_tags: ["uae-gcc"]
 tags: ["India UAE CEPA", "herbal ingredients", "tariff reduction", "botanical extracts", "Ayurvedic sourcing", "GCC trade", "India trade agreement"]
-image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=1200&auto=format&fit=crop"
+image: "/images/blog/blog-india-uae-cepa-herbal-ingredients-gcc.jpg"
+imageAlt: "Trade and export documentation for India-UAE CEPA herbal ingredient shipments"
 author: "Ayris Global Sourcing Intelligence"
 ---
 

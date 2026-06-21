@@ -4,7 +4,8 @@ description: "A practical guide to the key documents required when importing her
 pubDate: 2026-06-13
 category: "certifications"
 tags: ["CoA", "MSDS", "phytosanitary certificate", "import documentation", "herbal ingredients", "compliance"]
-image: "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1200&q=80"
+image: "/images/blog/blog-coa-msds-phytosanitary-certificates.jpg"
+imageAlt: "Certificate of Analysis document and laboratory testing paperwork"
 ---
 
 For international buyers sourcing herbal ingredients from India, the quality of the product and the quality of the documentation are equally important. A premium Ashwagandha extract that arrives without a complete, accurate Certificate of Analysis is unusable in a regulated market. A consignment of botanical powder held at customs because of an incomplete phytosanitary certificate costs time, money, and supplier relationships.

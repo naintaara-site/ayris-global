@@ -4,7 +4,7 @@ description: "Traceability is no longer optional for herbal ingredient buyers. R
 pubDate: 2026-06-14
 category: "sourcing"
 tags: ["traceability", "supply chain", "herbal ingredients", "botanical extracts", "FSMA", "EUDR", "adulteration", "quality assurance", "sourcing"]
-image: "https://images.unsplash.com/photo-1576086213369-97a306d36557?w=1200&auto=format&fit=crop"
+image: "/images/blog/blog-herbal-ingredient-traceability-supply-chain.jpg"
 imageAlt: "Herbal plant materials being sorted and documented for supply chain traceability"
 ---
 

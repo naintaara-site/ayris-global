@@ -5,7 +5,7 @@ pubDate: 2026-06-20
 category: "ingredients"
 region_tags: ["eu", "uk", "usa", "uae-gcc", "japan", "korea", "anz"]
 tags: ["adaptogens", "ashwagandha", "shatavari", "brahmi", "Ayurvedic ingredients", "nootropics", "nutraceuticals", "India sourcing"]
-image: "https://images.unsplash.com/photo-1611241893603-3c359704e0ee?w=1200&auto=format&fit=crop"
+image: "/images/blog/blog-adaptogens-ashwagandha-shatavari-brahmi.jpg"
 imageAlt: "Ashwagandha root and powder, a leading Indian adaptogen, on a wooden surface"
 author: "Ayris Global Sourcing Intelligence"
 faqSchema: |

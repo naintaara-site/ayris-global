@@ -4,7 +4,7 @@ description: "India produces 80% of the world's moringa supply. This buyer's gui
 pubDate: 2026-06-14
 category: "ingredients"
 tags: ["moringa", "moringa powder", "superfood", "India", "sourcing", "nutraceuticals", "organic", "botanical extracts", "buyers guide"]
-image: "https://images.unsplash.com/photo-1612540139150-4b5e5105b50e?w=1200&auto=format&fit=crop"
+image: "/images/blog/blog-moringa-powder-india-superfood-buyers-guide.jpg"
 imageAlt: "Green moringa leaf powder in a bowl with fresh moringa leaves"
 ---
 

@@ -6,56 +6,8 @@ category: "certifications"
 tags: ["GMP", "ISO", "FSSAI", "organic certification", "India", "herbal ingredients", "compliance"]
 image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=1200&auto=format&fit=crop"
 imageAlt: "Quality certification documents and laboratory equipment"
+faqSchema: '{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the difference between WHO-GMP and EU-GMP for Indian herbal ingredient suppliers?","acceptedAnswer":{"@type":"Answer","text":"WHO-GMP is recognised across many Asian, African, and Middle Eastern markets including the UAE and GCC. EU-GMP is the most stringent standard, requiring facility inspection by an EU regulatory authority. It is required for ingredients entering European pharmaceutical and certain supplement supply chains. The number of Indian manufacturers holding genuine EU-GMP certification is relatively small, so those who do represent a genuinely premium tier."}},{"@type":"Question","name":"Is NPOP organic certification recognised in the EU?","acceptedAnswer":{"@type":"Answer","text":"Yes, India''s NPOP certification is recognised by the EU under a bilateral equivalence agreement. NPOP-certified Indian organic products can be sold as organic in the EU without separate EU organic certification. However, NPOP is not recognised by the US. For organic claims in the US market, separate USDA NOP certification is required."}},{"@type":"Question","name":"What GMP certification do I need from Indian suppliers for the US market?","acceptedAnswer":{"@type":"Answer","text":"Suppliers must be registered with the US FDA and demonstrate compliance with 21 CFR Part 111, the cGMP standard for dietary supplements. FDA registration is a registration of the facility''s existence, not an inspection or approval. Look for suppliers who can demonstrate cGMP compliance verified by independent third-party audit from recognised bodies such as NSF International, SGS, or Bureau Veritas."}},{"@type":"Question","name":"How do I verify that an Indian supplier''s GMP or organic certificate is genuine?","acceptedAnswer":{"@type":"Answer","text":"Check validity dates, verify the certifying body is legitimate and accredited, and contact the certifying body directly to confirm authenticity and current status. Many certification bodies maintain online registers of certified companies. FDA registration can be verified through the FDA''s public establishment inventory database. Certificate fraud is a real risk, so direct verification is always worth doing for significant supply relationships."}},{"@type":"Question","name":"What Halal certification is required for Indian herbal ingredients entering the UAE and GCC?","acceptedAnswer":{"@type":"Answer","text":"Halal certification is a market access requirement for most wellness, supplement, and food categories in the UAE and GCC. Not all Halal certifiers are recognised across all GCC markets. The UAE''s ESMA maintains a list of approved Halal certifying bodies. Always confirm that your supplier''s Halal certification is from an ESMA-recognised body before committing to supply for UAE distribution."}}]}'
 ---
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What is the difference between WHO-GMP and EU-GMP for Indian herbal ingredient suppliers?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "WHO-GMP is based on World Health Organisation guidelines and is recognised across many Asian, African, and Middle Eastern markets including the UAE and GCC. EU-GMP is administered by EU national competent authorities and is the most stringent GMP standard, required for ingredients entering European pharmaceutical and certain supplement supply chains. EU-GMP certification requires facility inspection by an EU regulatory authority — a significantly more demanding process. The number of Indian herbal ingredient manufacturers holding genuine EU-GMP certification is relatively small."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is NPOP organic certification recognised in the EU?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes — India's NPOP (National Programme for Organic Production) certification is recognised by the EU under a bilateral equivalence agreement. NPOP-certified Indian organic products can be sold as organic in the EU without separate EU organic certification. However, NPOP is not recognised as equivalent by the US (USDA NOP). For organic claims in the US market, separate USDA NOP certification is required."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What GMP certification do I need from Indian suppliers for the US market?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "For the US dietary supplement market, suppliers must be registered with the US FDA and demonstrate compliance with 21 CFR Part 111 (Current Good Manufacturing Practice for dietary supplements). FDA registration is not the same as FDA inspection or approval — it is a registration of the facility's existence. Look for suppliers who can demonstrate cGMP compliance, ideally verified by an independent third-party audit from organisations such as NSF International, SGS, or Bureau Veritas."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do I verify that an Indian supplier's GMP or organic certificate is genuine?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Check the certificate validity dates — certificates require periodic renewal. Verify the certifying body is a legitimate, accredited organisation. Contact the certifying body directly to confirm the certificate's authenticity and current status. Many certification bodies maintain online registers of certified companies. FDA registration can be verified through the FDA's public establishment inventory database. Certificate fraud is a real risk in the botanical ingredient supply chain, so direct verification for significant supply relationships is worth the effort."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What Halal certification is required for Indian herbal ingredients entering the UAE and GCC?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "For UAE and GCC markets, Halal certification is a market access requirement for most wellness, supplement, and food product categories. Not all Halal certifiers are recognised in all markets. The UAE's Emirates Authority for Standardisation and Metrology (ESMA) maintains a list of approved Halal certifying bodies. Buyers sourcing for UAE distribution should confirm that their supplier's Halal certification is from an ESMA-recognised body."
-      }
-    }
-  ]
-}
-</script>
 
 When evaluating Indian herbal ingredient suppliers, international buyers encounter a range of certifications — GMP, WHO-GMP, EU-GMP, ISO 9001, ISO 22000, FSSAI, NPOP organic, USDA NOP, EU organic. Understanding what each certification actually covers — and what it does not — is essential for making informed sourcing decisions.
 

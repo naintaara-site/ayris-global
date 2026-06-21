@@ -6,6 +6,7 @@ category: "ingredients"
 tags: ["herbal extract", "botanical powder", "standardised extract", "sourcing", "nutraceuticals", "formulation"]
 image: "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=1200&auto=format&fit=crop"
 imageAlt: "Various herbal powders and botanical extracts in bowls"
+faqSchema: '{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the difference between a herbal extract and a botanical powder?","acceptedAnswer":{"@type":"Answer","text":"A botanical powder is dried plant material milled to a specified particle size, containing all original plant constituents in their natural proportions. A herbal extract is produced by solvent-based extraction that selectively concentrates target active constituents, so the final product is enriched relative to the starting plant material. Less extract is typically needed than powder to deliver the same dose of an active constituent."}},{"@type":"Question","name":"What is a standardised extract and why does it matter?","acceptedAnswer":{"@type":"Answer","text":"A standardised extract is one in which the concentration of a target active constituent, such as withanolides in ashwagandha or curcuminoids in turmeric, has been adjusted to a defined and analytically verified specification. Standardisation allows formulators to calculate precise active ingredient doses per serving, which matters for both regulatory label claims and consistency with research evidence."}},{"@type":"Question","name":"What does a 10:1 ratio extract actually mean?","acceptedAnswer":{"@type":"Answer","text":"A 10:1 ratio extract means that 10 kilograms of dried plant material were used to produce 1 kilogram of extract. This indicates relative concentration but does not directly state active constituent content, since plant material with variable potency will produce a ratio extract with variable potency. Buyers should ask for active constituent data from batch Certificates of Analysis alongside the ratio figure."}},{"@type":"Question","name":"When should a buyer choose botanical powder instead of an extract?","acceptedAnswer":{"@type":"Answer","text":"Botanical powder is generally the right choice for herbal teas and loose-leaf blends, traditional Ayurvedic formulations, low-concentration food and beverage incorporation, and clean-label positioning where minimal processing is a brand value. Extracts are preferred when a finished product makes a specific active constituent dose claim or requires high potency in a small serving size."}},{"@type":"Question","name":"Are standardised extracts always more expensive than botanical powders?","acceptedAnswer":{"@type":"Answer","text":"Extracts typically carry a higher price per kilogram, but this is partly offset because far less extract is needed to deliver an equivalent dose of active constituent. At scale, a full landed cost model that accounts for shipping weight, storage footprint, and processing yield often narrows or eliminates the apparent price premium of extracts over powders for high-volume supplement applications."}}]}'
 ---
 
 One of the most common sources of confusion for buyers new to the Indian herbal ingredient market is the distinction between extracts and powders. The terms are sometimes used interchangeably in supplier communications, which creates ambiguity — and ambiguity in ingredient sourcing creates problems downstream.
@@ -159,6 +160,30 @@ Answering these questions before approaching suppliers allows you to specify exa
 ---
 
 **Further Reading:** [Your First Order from India: A Step-by-Step Guide](/blog/sourcing-herbal-ingredients-india-first-order-guide/) · [Herbal Ingredient Traceability & Supply Chain Integrity](/blog/herbal-ingredient-traceability-supply-chain/) · [Moringa Powder from India: A Buyer's Guide](/blog/moringa-powder-india-superfood-buyers-guide/)
+
+---
+
+## Frequently Asked Questions
+
+**What is the difference between a herbal extract and a botanical powder?**
+
+A botanical powder is dried plant material milled to a specified particle size, containing all original plant constituents in their natural proportions. A herbal extract is produced by solvent-based extraction that selectively concentrates target active constituents, so the final product is enriched relative to the starting plant material. Less extract is typically needed than powder to deliver the same dose of an active constituent.
+
+**What is a standardised extract and why does it matter?**
+
+A standardised extract is one in which the concentration of a target active constituent, such as withanolides in ashwagandha or curcuminoids in turmeric, has been adjusted to a defined and analytically verified specification. Standardisation allows formulators to calculate precise active ingredient doses per serving, which matters for both regulatory label claims and consistency with research evidence.
+
+**What does a 10:1 ratio extract actually mean?**
+
+A 10:1 ratio extract means that 10 kilograms of dried plant material were used to produce 1 kilogram of extract. This indicates relative concentration but does not directly state active constituent content, since plant material with variable potency will produce a ratio extract with variable potency. Buyers should ask for active constituent data from batch Certificates of Analysis alongside the ratio figure.
+
+**When should a buyer choose botanical powder instead of an extract?**
+
+Botanical powder is generally the right choice for herbal teas and loose-leaf blends, traditional Ayurvedic formulations, low-concentration food and beverage incorporation, and clean-label positioning where minimal processing is a brand value. Extracts are preferred when a finished product makes a specific active constituent dose claim or requires high potency in a small serving size.
+
+**Are standardised extracts always more expensive than botanical powders?**
+
+Extracts typically carry a higher price per kilogram, but this is partly offset because far less extract is needed to deliver an equivalent dose of active constituent. At scale, a full landed cost model that accounts for shipping weight, storage footprint, and processing yield often narrows or eliminates the apparent price premium of extracts over powders for high-volume supplement applications.
 
 ---
 

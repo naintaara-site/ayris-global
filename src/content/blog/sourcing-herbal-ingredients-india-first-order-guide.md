@@ -6,6 +6,7 @@ category: "sourcing"
 tags: ["sourcing", "India", "herbal ingredients", "first order", "MOQ", "samples", "buyers guide", "import", "botanical extracts"]
 image: "https://images.unsplash.com/photo-1542838132-92c53300491e?w=1200&auto=format&fit=crop"
 imageAlt: "Hands packaging herbal ingredients for international export shipment"
+faqSchema: '{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What should a buyer define before contacting Indian herbal ingredient suppliers?","acceptedAnswer":{"@type":"Answer","text":"Before sending any enquiry, buyers should define the product specification including form and grade, the quantity needed for a first order and projected annual volume, certification requirements such as organic, halal, or GMP compliance, and the timeline needed working backwards from a production or launch date. Having even an approximate specification signals to suppliers that the buyer is serious and qualified."}},{"@type":"Question","name":"What documentation should accompany a sample request from an Indian supplier?","acceptedAnswer":{"@type":"Answer","text":"A sample enquiry should request a product specification sheet with typical analysis values, a recent batch Certificate of Analysis from an accredited third-party laboratory, copies of relevant certifications such as organic, GMP, halal, and FSSAI licence, and a supplier profile or company credentials document. A supplier who provides this documentation promptly alongside the physical sample is demonstrating the operational competence needed in a commercial relationship."}},{"@type":"Question","name":"What are typical minimum order quantities for a first order of Indian herbal ingredients?","acceptedAnswer":{"@type":"Answer","text":"Commodity herbal powders such as moringa, tulsi, or turmeric typically range from 25 to 100 kilograms per product for first orders. Standardised botanical extracts typically range from 5 to 25 kilograms, reflecting higher production cost, with some specialty manufacturers setting minimum order values instead of weight-based minimums. MOQ negotiation is normal, particularly for buyers who can demonstrate a credible annual volume projection."}},{"@type":"Question","name":"What is a realistic total timeline for a first order from India?","acceptedAnswer":{"@type":"Answer","text":"A realistic total timeline from first enquiry to received shipment is six to twelve weeks, accounting for sample evaluation, order confirmation, production lead time of two to six weeks depending on the product, export documentation preparation, and shipping transit time of seven to twenty-one days by sea depending on destination."}},{"@type":"Question","name":"What payment terms should a buyer expect on a first order with an Indian supplier?","acceptedAnswer":{"@type":"Answer","text":"First orders typically follow conservative payment structures, most commonly 100 percent advance payment by telegraphic transfer for small to medium orders, or 50 percent advance with the balance due against shipping documents for mid-size orders. This is standard practice reflecting the supplier''s production investment ahead of receiving payment, and should not be treated as a red flag. Terms typically become more favourable as a trading history is established."}}]}'
 ---
 
 Every successful long-term sourcing relationship with an Indian herbal ingredient supplier began with a first enquiry, a first sample, and a first order. That first step is also where most new buyers hesitate — uncertain about what to expect, what to ask, how much to order, how long it will take, and how to protect themselves in an unfamiliar cross-border trade relationship.
@@ -142,6 +143,30 @@ Suppliers who deliver exactly what they committed to, with complete and accurate
 [Ayris Global](/for-buyers/) exists specifically to help international buyers find and work with Indian herbal producers who meet this standard. We pre-qualify suppliers across quality systems, certification credentials, documentation capability, and commercial reliability — and we manage the sourcing relationship on your behalf, handling sample coordination, documentation review, shipment tracking, and issue resolution.
 
 For buyers who want to explore how we can support your India herbal ingredient sourcing — whether for a first order or to strengthen an existing supply chain — [contact our team](/contact/) at sourcing@ayrisglobal.in. We are happy to discuss your requirements, share relevant supplier capabilities, and outline how we can make your first India order — and every one after — as straightforward as it should be.
+
+---
+
+## Frequently Asked Questions
+
+**What should a buyer define before contacting Indian herbal ingredient suppliers?**
+
+Before sending any enquiry, buyers should define the product specification including form and grade, the quantity needed for a first order and projected annual volume, certification requirements such as organic, halal, or GMP compliance, and the timeline needed working backwards from a production or launch date. Having even an approximate specification signals to suppliers that the buyer is serious and qualified.
+
+**What documentation should accompany a sample request from an Indian supplier?**
+
+A sample enquiry should request a product specification sheet with typical analysis values, a recent batch Certificate of Analysis from an accredited third-party laboratory, copies of relevant certifications such as organic, GMP, halal, and FSSAI licence, and a supplier profile or company credentials document. A supplier who provides this documentation promptly alongside the physical sample is demonstrating the operational competence needed in a commercial relationship.
+
+**What are typical minimum order quantities for a first order of Indian herbal ingredients?**
+
+Commodity herbal powders such as moringa, tulsi, or turmeric typically range from 25 to 100 kilograms per product for first orders. Standardised botanical extracts typically range from 5 to 25 kilograms, reflecting higher production cost, with some specialty manufacturers setting minimum order values instead of weight-based minimums. MOQ negotiation is normal, particularly for buyers who can demonstrate a credible annual volume projection.
+
+**What is a realistic total timeline for a first order from India?**
+
+A realistic total timeline from first enquiry to received shipment is six to twelve weeks, accounting for sample evaluation, order confirmation, production lead time of two to six weeks depending on the product, export documentation preparation, and shipping transit time of seven to twenty-one days by sea depending on destination.
+
+**What payment terms should a buyer expect on a first order with an Indian supplier?**
+
+First orders typically follow conservative payment structures, most commonly 100 percent advance payment by telegraphic transfer for small to medium orders, or 50 percent advance with the balance due against shipping documents for mid-size orders. This is standard practice reflecting the supplier's production investment ahead of receiving payment, and should not be treated as a red flag. Terms typically become more favourable as a trading history is established.
 
 ---
 

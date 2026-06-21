@@ -8,7 +8,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 >
 
   <!-- Product/ItemList JSON-LD Schema (Session 28) -->
-  <script type="application/ld+json" set:html={`{"@context":"https://schema.org","@type":"ItemList","name":"Ayris Global Ingredient Categories","description":"Premium Indian botanical ingredients supplied by Ayris Global across six categories: Ayurvedic ingredients, herbal extracts, botanical powders, nutraceutical ingredients, essential oils, and natural wellness ingredients.","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"Product","name":"Ashwagandha","alternateName":"Withania somnifera","category":"Ayurvedic Ingredients","description":"Root extract (KSM-66, Sensoril standardised), root powder. The world's most commercially significant Ayurvedic adaptogen.","image":"https://ayrisglobal.in/images/products/ashwagandha.jpg","brand":{"@type":"Organization","name":"Ayris Global"}}},{"@type":"ListItem","position":2,"item":{"@type":"Product","name":"Shatavari","alternateName":"Asparagus racemosus","category":"Ayurvedic Ingredients","description":"Root powder and extract. A leading women's wellness tonic, with growing demand across EU nutraceutical and functional food sectors.","image":"https://ayrisglobal.in/images/products/shatavari.jpg","brand":{"@type":"Organization","name":"Ayris Global"}}},{"@type":"ListItem","position":3,"item":{"@type":"Product","name":"Brahmi","alternateName":"Bacopa monnieri","category":"Ayurvedic Ingredients","description":"Aerial extract standardised to bacosides. A nootropic ingredient in strong demand from UK, USA, Japan and Korean cognitive supplement markets.","image":"https://ayrisglobal.in/images/products/brahmi.jpg","brand":{"@type":"Organization","name":"Ayris Global"}}},{"@type":"ListItem","position":4,"item":{"@type":"Product","name":"Tulsi Extract","alternateName":"Ocimum tenuiflorum","category":"Herbal Extracts","description":"Leaf extract standardised to ursolic acid and eugenol. Adaptogenic, antimicrobial, highly sought by functional tea and supplement brands in ANZ, USA and UK.","image":"https://ayrisglobal.in/images/products/tulsi-extract.jpg","brand":{"@type":"Organization","name":"Ayris Global"}}},{"@type":"ListItem","position":5,"item":{"@type":"Product","name":"Boswellia Extract","alternateName":"Boswellia serrata","category":"Herbal Extracts","description":"AKBA-standardised Indian frankincense extract. The leading joint health ingredient in European and North American nutraceutical markets.","image":"https://ayrisglobal.in/images/products/boswellia-extract.jpg","brand":{"@type":"Organization","name":"Ayris Global"}}},{"@type":"ListItem","position":6,"item":{"@type":"Product","name":"Guduchi Extract","alternateName":"Tinospora cordifolia","category":"Herbal Extracts","description":"Stem extract standardised to tinosporin. A premier Ayurvedic immunomodulator with growing clinical validation and rising demand across EU and Korean markets.","image":"https://ayrisglobal.in/images/products/guduchi-extract.jpg","brand":{"@type":"Organization","name":"Ayris Global"}}},{"@type":"ListItem","position":7,"item":{"@type":"Product","name":"Moringa Powder","alternateName":"Moringa oleifera","category":"Botanical Powders","description":"Leaf powder, a complete protein source with exceptional iron and antioxidant profiles. In high demand from EU health food brands, SEA wellness markets, and LatAm functional food producers.","image":"https://ayrisglobal.in/images/products/moringa-powder.jpg","brand":{"@type":"Organization","name":"Ayris Global"}}},{"@type":"ListItem","position":8,"item":{"@type":"Product","name":"Amla Powder","alternateName":"Phyllanthus emblica","category":"Botanical Powders","description":"Indian gooseberry fruit powder, one of the richest natural sources of Vitamin C. A star ingredient for immunity, hair wellness, and antioxidant supplement formulations worldwide.","image":"https://ayrisglobal.in/images/products/amla-powder.jpg","brand":{"@type":"Organization","name":"Ayris Global"}}},{"@type":"ListItem","position":9,"item":{"@type":"Product","name":"Neem Powder","alternateName":"Azadirachta indica","category":"Botanical Powders","description":"Leaf and seed powder. Widely used in cosmetic formulations, nutraceutical capsules, and functional wellness products across EU, UK and Middle East markets.","image":"https://ayrisglobal.in/images/products/neem-powder.jpg","brand":{"@type":"Organization","name":"Ayris Global"}}},{"@type":"ListItem","position":10,"item":{"@type":"Product","name":"Curcumin (Turmeric Extract)","alternateName":"Curcuma longa","category":"Nutraceutical Ingredients","description":"95% curcuminoids standardised, BCM-95 and CurcuWIN formats available. The world's most studied botanical anti-inflammatory, core to supplement lines in every major global market.","image":"https://ayrisglobal.in/images/products/curcumin.jpg","brand":{"@type":"Organization","name":"Ayris Global"}}},{"@type":"ListItem","position":11,"item":{"@type":"Product","name":"Piperine (Black Pepper Extract)","alternateName":"Piper nigrum","category":"Nutraceutical Ingredients","description":"95% piperine standardised. The bioavailability enhancer found in the majority of premium curcumin, ashwagandha, and fat-soluble vitamin formulations globally.","image":"https://ayrisglobal.in/images/products/piperine.jpg","brand":{"@type":"Organization","name":"Ayris Global"}}},{"@type":"ListItem","position":12,"item":{"@type":"Product","name":"Triphala","alternateName":"Amla, Haritaki, Bibhitaki","category":"Nutraceutical Ingredients","description":"The foundational Ayurvedic three-fruit formula, standardised extract and traditional powder. In strong demand from digestive wellness and longevity supplement markets in USA, EU and Japan.","image":"https://ayrisglobal.in/images/products/triphala.jpg","brand":{"@type":"Organization","name":"Ayris Global"}}},{"@type":"ListItem","position":13,"item":{"@type":"Product","name":"Cardamom Oil","alternateName":"Elettaria cardamomum","category":"Essential Oils","description":"Steam-distilled from Kerala green cardamom pods. Prized in luxury fragrance, food flavouring, and aromatherapy applications from Europe to Japan.","image":"https://ayrisglobal.in/images/products/cardamom-oil.jpg","brand":{"@type":"Organization","name":"Ayris Global"}}},{"@type":"ListItem","position":14,"item":{"@type":"Product","name":"Vetiver Oil","alternateName":"Chrysopogon zizanioides","category":"Essential Oils","description":"Indian vetiver (khus), steam-distilled root oil with a distinctive earthy, woody profile. A key base note in luxury fragrances and a growing ingredient in ayurvedic skincare formulations.","image":"https://ayrisglobal.in/images/products/vetiver-oil.jpg","brand":{"@type":"Organization","name":"Ayris Global"}}},{"@type":"ListItem","position":15,"item":{"@type":"Product","name":"Ginger Oil","alternateName":"Zingiber officinale","category":"Essential Oils","description":"CO2 and steam-distilled from Indian ginger rhizomes. Used in food flavouring, digestive wellness formulations, and sports recovery products across all major global markets.","image":"https://ayrisglobal.in/images/products/ginger-oil.jpg","brand":{"@type":"Organization","name":"Ayris Global"}}},{"@type":"ListItem","position":16,"item":{"@type":"Product","name":"Rose Petals","alternateName":"Rosa damascena","category":"Natural Wellness Ingredients","description":"Dried and whole rose petals from Rajasthan and Uttarakhand, used in luxury herbal teas, Ayurvedic skincare, and beauty supplement formulations across EU, UAE/GCC and Korean markets.","image":"https://ayrisglobal.in/images/products/rose-petals.jpg","brand":{"@type":"Organization","name":"Ayris Global"}}},{"@type":"ListItem","position":17,"item":{"@type":"Product","name":"Hibiscus","alternateName":"Hibiscus sabdariffa","category":"Natural Wellness Ingredients","description":"Dried calyx, a vibrant functional botanical used in herbal teas, functional beverages, and wellness formulations. Strong demand from EU, USA, and LatAm markets for its colour, flavour, and antioxidant content.","image":"https://ayrisglobal.in/images/products/hibiscus.jpg","brand":{"@type":"Organization","name":"Ayris Global"}}},{"@type":"ListItem","position":18,"item":{"@type":"Product","name":"Chamomile","alternateName":"Matricaria chamomilla","category":"Natural Wellness Ingredients","description":"Dried chamomile flowers, whole and cut grades available. A consistent top-seller in herbal tea blends globally, from UK high-street brands to Japanese wellness subscription boxes.","image":"https://ayrisglobal.in/images/products/chamomile.jpg","brand":{"@type":"Organization","name":"Ayris Global"}}}]}`} slot="head" />
+  <script type="application/ld+json" set:html={`{"@context":"https://schema.org","@type":"ItemList","name":"Ayris Global Ingredient Categories","description":"Premium Indian botanical ingredients supplied by Ayris Global across six categories: Ayurvedic ingredients, herbal extracts, botanical powders, nutraceutical ingredients, essential oils, and natural wellness ingredients.","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"Product","name":"Ashwagandha","alternateName":"Withania somnifera","category":"Ayurvedic Ingredients","description":"Root extract (KSM-66, Sensoril standardised), root powder. The world's most commercially significant Ayurvedic adaptogen.","image":"https://images.unsplash.com/photo-1569936906148-06de87cb0681?w=320&h=220&fit=crop&auto=format","brand":{"@type":"Organization","name":"Ayris Global"}}},{"@type":"ListItem","position":2,"item":{"@type":"Product","name":"Shatavari","alternateName":"Asparagus racemosus","category":"Ayurvedic Ingredients","description":"Root powder and extract. A leading women's wellness tonic, with growing demand across EU nutraceutical and functional food sectors.","image":"https://images.unsplash.com/photo-1741513599050-487ccfb86275?w=320&h=220&fit=crop&auto=format","brand":{"@type":"Organization","name":"Ayris Global"}}},{"@type":"ListItem","position":3,"item":{"@type":"Product","name":"Brahmi","alternateName":"Bacopa monnieri","category":"Ayurvedic Ingredients","description":"Aerial extract standardised to bacosides. A nootropic ingredient in strong demand from UK, USA, Japan and Korean cognitive supplement markets.","image":"https://images.unsplash.com/photo-1538596313828-41d729090199?w=320&h=220&fit=crop&auto=format","brand":{"@type":"Organization","name":"Ayris Global"}}},{"@type":"ListItem","position":4,"item":{"@type":"Product","name":"Tulsi Extract","alternateName":"Ocimum tenuiflorum","category":"Herbal Extracts","description":"Leaf extract standardised to ursolic acid and eugenol. Adaptogenic, antimicrobial, highly sought by functional tea and supplement brands in ANZ, USA and UK.","image":"https://images.unsplash.com/photo-1490175677764-12ef5f1eaf87?w=320&h=220&fit=crop&auto=format","brand":{"@type":"Organization","name":"Ayris Global"}}},{"@type":"ListItem","position":5,"item":{"@type":"Product","name":"Boswellia Extract","alternateName":"Boswellia serrata","category":"Herbal Extracts","description":"AKBA-standardised Indian frankincense extract. The leading joint health ingredient in European and North American nutraceutical markets.","image":"https://images.unsplash.com/photo-1642049671748-2e35cdb11c2c?w=320&h=220&fit=crop&auto=format","brand":{"@type":"Organization","name":"Ayris Global"}}},{"@type":"ListItem","position":6,"item":{"@type":"Product","name":"Guduchi Extract","alternateName":"Tinospora cordifolia","category":"Herbal Extracts","description":"Stem extract standardised to tinosporin. A premier Ayurvedic immunomodulator with growing clinical validation and rising demand across EU and Korean markets.","image":"https://images.unsplash.com/photo-1569936906148-06de87cb0681?w=320&h=220&fit=crop&auto=format","brand":{"@type":"Organization","name":"Ayris Global"}}},{"@type":"ListItem","position":7,"item":{"@type":"Product","name":"Moringa Powder","alternateName":"Moringa oleifera","category":"Botanical Powders","description":"Leaf powder, a complete protein source with exceptional iron and antioxidant profiles. In high demand from EU health food brands, SEA wellness markets, and LatAm functional food producers.","image":"https://images.unsplash.com/photo-1490175677764-12ef5f1eaf87?w=320&h=220&fit=crop&auto=format","brand":{"@type":"Organization","name":"Ayris Global"}}},{"@type":"ListItem","position":8,"item":{"@type":"Product","name":"Amla Powder","alternateName":"Phyllanthus emblica","category":"Botanical Powders","description":"Indian gooseberry fruit powder, one of the richest natural sources of Vitamin C. A star ingredient for immunity, hair wellness, and antioxidant supplement formulations worldwide.","image":"https://images.unsplash.com/photo-1565117834327-efcb6a1d55a1?w=320&h=220&fit=crop&auto=format","brand":{"@type":"Organization","name":"Ayris Global"}}},{"@type":"ListItem","position":9,"item":{"@type":"Product","name":"Neem Powder","alternateName":"Azadirachta indica","category":"Botanical Powders","description":"Leaf and seed powder. Widely used in cosmetic formulations, nutraceutical capsules, and functional wellness products across EU, UK and Middle East markets.","image":"https://images.unsplash.com/photo-1538596313828-41d729090199?w=320&h=220&fit=crop&auto=format","brand":{"@type":"Organization","name":"Ayris Global"}}},{"@type":"ListItem","position":10,"item":{"@type":"Product","name":"Curcumin (Turmeric Extract)","alternateName":"Curcuma longa","category":"Nutraceutical Ingredients","description":"95% curcuminoids standardised, BCM-95 and CurcuWIN formats available. The world's most studied botanical anti-inflammatory, core to supplement lines in every major global market.","image":"https://images.unsplash.com/photo-1741513599050-487ccfb86275?w=320&h=220&fit=crop&auto=format","brand":{"@type":"Organization","name":"Ayris Global"}}},{"@type":"ListItem","position":11,"item":{"@type":"Product","name":"Piperine (Black Pepper Extract)","alternateName":"Piper nigrum","category":"Nutraceutical Ingredients","description":"95% piperine standardised. The bioavailability enhancer found in the majority of premium curcumin, ashwagandha, and fat-soluble vitamin formulations globally.","image":"https://images.unsplash.com/photo-1758657996330-095d08451cd9?w=320&h=220&fit=crop&auto=format","brand":{"@type":"Organization","name":"Ayris Global"}}},{"@type":"ListItem","position":12,"item":{"@type":"Product","name":"Triphala","alternateName":"Amla, Haritaki, Bibhitaki","category":"Nutraceutical Ingredients","description":"The foundational Ayurvedic three-fruit formula, standardised extract and traditional powder. In strong demand from digestive wellness and longevity supplement markets in USA, EU and Japan.","image":"https://images.unsplash.com/photo-1768729340731-85e386e62529?w=320&h=220&fit=crop&auto=format","brand":{"@type":"Organization","name":"Ayris Global"}}},{"@type":"ListItem","position":13,"item":{"@type":"Product","name":"Cardamom Oil","alternateName":"Elettaria cardamomum","category":"Essential Oils","description":"Steam-distilled from Kerala green cardamom pods. Prized in luxury fragrance, food flavouring, and aromatherapy applications from Europe to Japan.","image":"https://images.unsplash.com/photo-1758657996330-095d08451cd9?w=320&h=220&fit=crop&auto=format","brand":{"@type":"Organization","name":"Ayris Global"}}},{"@type":"ListItem","position":14,"item":{"@type":"Product","name":"Vetiver Oil","alternateName":"Chrysopogon zizanioides","category":"Essential Oils","description":"Indian vetiver (khus), steam-distilled root oil with a distinctive earthy, woody profile. A key base note in luxury fragrances and a growing ingredient in ayurvedic skincare formulations.","image":"https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=320&h=220&fit=crop&auto=format","brand":{"@type":"Organization","name":"Ayris Global"}}},{"@type":"ListItem","position":15,"item":{"@type":"Product","name":"Ginger Oil","alternateName":"Zingiber officinale","category":"Essential Oils","description":"CO2 and steam-distilled from Indian ginger rhizomes. Used in food flavouring, digestive wellness formulations, and sports recovery products across all major global markets.","image":"https://images.unsplash.com/photo-1741513599050-487ccfb86275?w=320&h=220&fit=crop&auto=format","brand":{"@type":"Organization","name":"Ayris Global"}}},{"@type":"ListItem","position":16,"item":{"@type":"Product","name":"Rose Petals","alternateName":"Rosa damascena","category":"Natural Wellness Ingredients","description":"Dried and whole rose petals from Rajasthan and Uttarakhand, used in luxury herbal teas, Ayurvedic skincare, and beauty supplement formulations across EU, UAE/GCC and Korean markets.","image":"https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?w=320&h=220&fit=crop&auto=format","brand":{"@type":"Organization","name":"Ayris Global"}}},{"@type":"ListItem","position":17,"item":{"@type":"Product","name":"Hibiscus","alternateName":"Hibiscus sabdariffa","category":"Natural Wellness Ingredients","description":"Dried calyx, a vibrant functional botanical used in herbal teas, functional beverages, and wellness formulations. Strong demand from EU, USA, and LatAm markets for its colour, flavour, and antioxidant content.","image":"https://images.unsplash.com/photo-1517162028430-9fec801e1a6b?w=320&h=220&fit=crop&auto=format","brand":{"@type":"Organization","name":"Ayris Global"}}},{"@type":"ListItem","position":18,"item":{"@type":"Product","name":"Chamomile","alternateName":"Matricaria chamomilla","category":"Natural Wellness Ingredients","description":"Dried chamomile flowers, whole and cut grades available. A consistent top-seller in herbal tea blends globally, from UK high-street brands to Japanese wellness subscription boxes.","image":"https://images.unsplash.com/photo-1603394633635-c95b9f6f7d9c?w=320&h=220&fit=crop&auto=format","brand":{"@type":"Organization","name":"Ayris Global"}}}]}`} slot="head" />
 
   <!-- ═══════════════════════════════════
        PAGE HERO
@@ -30,7 +30,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
         <div class="category__hero">
           <img
-            src="/images/products/category-ayurvedic.jpg"
+            src="https://images.unsplash.com/photo-1768729340731-85e386e62529?w=700&h=500&fit=crop&auto=format"
             alt="Traditional Ayurvedic preparation with mortar and pestle, Gujarat India"
             loading="lazy"
             width="700"
@@ -56,7 +56,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
             <div class="ingredient-card--sm">
               <div class="ingredient-card--sm__img">
-                <img src="/images/products/ashwagandha.jpg" alt="Ashwagandha plant" loading="lazy" width="320" height="220"/>
+                <img src="https://images.unsplash.com/photo-1569936906148-06de87cb0681?w=320&h=220&fit=crop&auto=format" alt="Ashwagandha plant" loading="lazy" width="320" height="220"/>
               </div>
               <div class="ingredient-card--sm__body">
                 <h3>Ashwagandha</h3>
@@ -67,7 +67,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
             <div class="ingredient-card--sm">
               <div class="ingredient-card--sm__img">
-                <img src="/images/products/shatavari.jpg" alt="Shatavari root" loading="lazy" width="320" height="220"/>
+                <img src="https://images.unsplash.com/photo-1741513599050-487ccfb86275?w=320&h=220&fit=crop&auto=format" alt="Shatavari root" loading="lazy" width="320" height="220"/>
               </div>
               <div class="ingredient-card--sm__body">
                 <h3>Shatavari</h3>
@@ -78,7 +78,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
             <div class="ingredient-card--sm">
               <div class="ingredient-card--sm__img">
-                <img src="/images/products/brahmi.jpg" alt="Brahmi plant" loading="lazy" width="320" height="220"/>
+                <img src="https://images.unsplash.com/photo-1538596313828-41d729090199?w=320&h=220&fit=crop&auto=format" alt="Brahmi plant" loading="lazy" width="320" height="220"/>
               </div>
               <div class="ingredient-card--sm__body">
                 <h3>Brahmi</h3>
@@ -102,7 +102,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
         <div class="category__hero">
           <img
-            src="/images/products/category-extracts.jpg"
+            src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=700&h=500&fit=crop&auto=format"
             alt="Amber glass dropper bottle containing herbal extract"
             loading="lazy"
             width="700"
@@ -128,7 +128,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
             <div class="ingredient-card--sm">
               <div class="ingredient-card--sm__img">
-                <img src="/images/products/tulsi-extract.jpg" alt="Tulsi holy basil leaves extract" loading="lazy" width="320" height="220"/>
+                <img src="https://images.unsplash.com/photo-1490175677764-12ef5f1eaf87?w=320&h=220&fit=crop&auto=format" alt="Tulsi holy basil leaves extract" loading="lazy" width="320" height="220"/>
               </div>
               <div class="ingredient-card--sm__body">
                 <h3>Tulsi Extract</h3>
@@ -139,7 +139,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
             <div class="ingredient-card--sm">
               <div class="ingredient-card--sm__img">
-                <img src="/images/products/boswellia-extract.jpg" alt="Boswellia frankincense resin" loading="lazy" width="320" height="220"/>
+                <img src="https://images.unsplash.com/photo-1642049671748-2e35cdb11c2c?w=320&h=220&fit=crop&auto=format" alt="Boswellia frankincense resin" loading="lazy" width="320" height="220"/>
               </div>
               <div class="ingredient-card--sm__body">
                 <h3>Boswellia Extract</h3>
@@ -150,7 +150,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
             <div class="ingredient-card--sm">
               <div class="ingredient-card--sm__img">
-                <img src="/images/products/guduchi-extract.jpg" alt="Guduchi plant extract" loading="lazy" width="320" height="220"/>
+                <img src="https://images.unsplash.com/photo-1569936906148-06de87cb0681?w=320&h=220&fit=crop&auto=format" alt="Guduchi plant extract" loading="lazy" width="320" height="220"/>
               </div>
               <div class="ingredient-card--sm__body">
                 <h3>Guduchi Extract</h3>
@@ -174,7 +174,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
         <div class="category__hero">
           <img
-            src="/images/products/category-powders.jpg"
+            src="https://images.unsplash.com/photo-1565117834327-efcb6a1d55a1?w=700&h=500&fit=crop&auto=format"
             alt="Fine green botanical powder on wooden spoon"
             loading="lazy"
             width="700"
@@ -200,7 +200,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
             <div class="ingredient-card--sm">
               <div class="ingredient-card--sm__img">
-                <img src="/images/products/moringa-powder.jpg" alt="Moringa leaf powder" loading="lazy" width="320" height="220"/>
+                <img src="https://images.unsplash.com/photo-1490175677764-12ef5f1eaf87?w=320&h=220&fit=crop&auto=format" alt="Moringa leaf powder" loading="lazy" width="320" height="220"/>
               </div>
               <div class="ingredient-card--sm__body">
                 <h3>Moringa Powder</h3>
@@ -211,7 +211,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
             <div class="ingredient-card--sm">
               <div class="ingredient-card--sm__img">
-                <img src="/images/products/amla-powder.jpg" alt="Amla Indian gooseberry powder" loading="lazy" width="320" height="220"/>
+                <img src="https://images.unsplash.com/photo-1565117834327-efcb6a1d55a1?w=320&h=220&fit=crop&auto=format" alt="Amla Indian gooseberry powder" loading="lazy" width="320" height="220"/>
               </div>
               <div class="ingredient-card--sm__body">
                 <h3>Amla Powder</h3>
@@ -222,7 +222,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
             <div class="ingredient-card--sm">
               <div class="ingredient-card--sm__img">
-                <img src="/images/products/neem-powder.jpg" alt="Neem leaf powder" loading="lazy" width="320" height="220"/>
+                <img src="https://images.unsplash.com/photo-1538596313828-41d729090199?w=320&h=220&fit=crop&auto=format" alt="Neem leaf powder" loading="lazy" width="320" height="220"/>
               </div>
               <div class="ingredient-card--sm__body">
                 <h3>Neem Powder</h3>
@@ -246,7 +246,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
         <div class="category__hero">
           <img
-            src="/images/products/category-nutraceuticals.jpg"
+            src="https://images.unsplash.com/photo-1734607402878-eeb4233cea86?w=700&h=500&fit=crop&auto=format"
             alt="Ayurvedic supplement bottles and wellness products"
             loading="lazy"
             width="700"
@@ -272,7 +272,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
             <div class="ingredient-card--sm">
               <div class="ingredient-card--sm__img">
-                <img src="/images/products/curcumin.jpg" alt="Turmeric powder, source of curcumin" loading="lazy" width="320" height="220"/>
+                <img src="https://images.unsplash.com/photo-1741513599050-487ccfb86275?w=320&h=220&fit=crop&auto=format" alt="Turmeric curcumin root" loading="lazy" width="320" height="220"/>
               </div>
               <div class="ingredient-card--sm__body">
                 <h3>Curcumin (Turmeric Extract)</h3>
@@ -283,7 +283,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
             <div class="ingredient-card--sm">
               <div class="ingredient-card--sm__img">
-                <img src="/images/products/piperine.jpg" alt="Black pepper piperine spice" loading="lazy" width="320" height="220"/>
+                <img src="https://images.unsplash.com/photo-1758657996330-095d08451cd9?w=320&h=220&fit=crop&auto=format" alt="Black pepper piperine spice" loading="lazy" width="320" height="220"/>
               </div>
               <div class="ingredient-card--sm__body">
                 <h3>Piperine (Black Pepper Extract)</h3>
@@ -294,7 +294,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
             <div class="ingredient-card--sm">
               <div class="ingredient-card--sm__img">
-                <img src="/images/products/triphala.jpg" alt="Triphala Ayurvedic formula" loading="lazy" width="320" height="220"/>
+                <img src="https://images.unsplash.com/photo-1768729340731-85e386e62529?w=320&h=220&fit=crop&auto=format" alt="Triphala Ayurvedic formula" loading="lazy" width="320" height="220"/>
               </div>
               <div class="ingredient-card--sm__body">
                 <h3>Triphala</h3>
@@ -318,7 +318,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
         <div class="category__hero">
           <img
-            src="/images/products/category-essential-oils.jpg"
+            src="https://images.unsplash.com/photo-1671492246169-cdd6305870a0?w=700&h=500&fit=crop&auto=format"
             alt="Three essential oil bottles on white surface"
             loading="lazy"
             width="700"
@@ -344,7 +344,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
             <div class="ingredient-card--sm">
               <div class="ingredient-card--sm__img">
-                <img src="/images/products/cardamom-oil.jpg" alt="Cardamom essential oil" loading="lazy" width="320" height="220"/>
+                <img src="https://images.unsplash.com/photo-1758657996330-095d08451cd9?w=320&h=220&fit=crop&auto=format" alt="Cardamom essential oil" loading="lazy" width="320" height="220"/>
               </div>
               <div class="ingredient-card--sm__body">
                 <h3>Cardamom Oil</h3>
@@ -355,7 +355,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
             <div class="ingredient-card--sm">
               <div class="ingredient-card--sm__img">
-                <img src="/images/products/vetiver-oil.jpg" alt="Vetiver root, dried fibers used for steam distillation" loading="lazy" width="320" height="220"/>
+                <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=320&h=220&fit=crop&auto=format" alt="Vetiver essential oil amber bottle" loading="lazy" width="320" height="220"/>
               </div>
               <div class="ingredient-card--sm__body">
                 <h3>Vetiver Oil</h3>
@@ -366,7 +366,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
             <div class="ingredient-card--sm">
               <div class="ingredient-card--sm__img">
-                <img src="/images/products/ginger-oil.jpg" alt="Ginger essential oil root" loading="lazy" width="320" height="220"/>
+                <img src="https://images.unsplash.com/photo-1741513599050-487ccfb86275?w=320&h=220&fit=crop&auto=format" alt="Ginger essential oil root" loading="lazy" width="320" height="220"/>
               </div>
               <div class="ingredient-card--sm__body">
                 <h3>Ginger Oil</h3>
@@ -390,7 +390,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
         <div class="category__hero">
           <img
-            src="/images/products/category-natural-wellness.jpg"
+            src="https://images.unsplash.com/photo-1517162028430-9fec801e1a6b?w=700&h=500&fit=crop&auto=format"
             alt="Vibrant red hibiscus botanical flower"
             loading="lazy"
             width="700"
@@ -416,7 +416,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
             <div class="ingredient-card--sm">
               <div class="ingredient-card--sm__img">
-                <img src="/images/products/rose-petals.jpg" alt="Rose petals dried" loading="lazy" width="320" height="220"/>
+                <img src="https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?w=320&h=220&fit=crop&auto=format" alt="Rose petals dried" loading="lazy" width="320" height="220"/>
               </div>
               <div class="ingredient-card--sm__body">
                 <h3>Rose Petals</h3>
@@ -427,7 +427,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
             <div class="ingredient-card--sm">
               <div class="ingredient-card--sm__img">
-                <img src="/images/products/hibiscus.jpg" alt="Hibiscus flowers" loading="lazy" width="320" height="220"/>
+                <img src="https://images.unsplash.com/photo-1517162028430-9fec801e1a6b?w=320&h=220&fit=crop&auto=format" alt="Hibiscus flowers" loading="lazy" width="320" height="220"/>
               </div>
               <div class="ingredient-card--sm__body">
                 <h3>Hibiscus</h3>
@@ -438,7 +438,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
             <div class="ingredient-card--sm">
               <div class="ingredient-card--sm__img">
-                <img src="/images/products/chamomile.jpg" alt="Chamomile flowers dried" loading="lazy" width="320" height="220"/>
+                <img src="https://images.unsplash.com/photo-1603394633635-c95b9f6f7d9c?w=320&h=220&fit=crop&auto=format" alt="Chamomile flowers dried" loading="lazy" width="320" height="220"/>
               </div>
               <div class="ingredient-card--sm__body">
                 <h3>Chamomile</h3>

@@ -612,6 +612,15 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     line-height: 1.6;
   }
 
+  /* CRITICAL: .form-message's display:flex above otherwise overrides the
+     browser default [hidden] { display: none } rule at equal specificity,
+     causing both success and error messages to render permanently on load
+     regardless of the JS-controlled hidden attribute. This rule restores
+     correct hide/show behavior. */
+  .form-message[hidden] {
+    display: none;
+  }
+
   .form-message--success {
     background: rgba(39,120,75,0.08);
     border: 1px solid rgba(39,120,75,0.3);
